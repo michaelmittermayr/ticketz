@@ -29,11 +29,16 @@ YemekKoala::Application.configure do
   ActionMailer::Base.delivery_method = :smtp
 
   config.action_mailer.smtp_settings = {
-     :address              => "smtp.gmail.com",
+    :user_name => 'mmittermayr',
+    :password => 'Welcome2$2016',
+    :domain => 'ticketz.herokuapp.com',
+    :address              => 'smtp.sendgrid.net',
+     #:address              => "smtp.gmail.com",
      :port                 => 587,
-     :domain               => 'gmail.com',
-     :user_name            => 'kaisercoins@gmail.com',
-     :password             => 'hpvwpvsuqrvcwwgm',
+     #
+     #:domain               => 'gmail.com',
+     #:user_name            => 'kaisercoins@gmail.com',
+     #:password             => 'hpvwpvsuqrvcwwgm',
      :authentication       => :plain,
      :enable_starttls_auto => true  }
 
