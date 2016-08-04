@@ -397,4 +397,2277 @@ Invalid plugin name gmail_smtp.git. Please give a name which use only alphabetic
 [36m2016-08-04T18:01:39.967614+00:00 app[web.1]:[39m Exiting
 [36m2016-08-04T18:01:40.128305+00:00 heroku[web.1]:[39m Process exited with status 143
 [36m2016-08-04T18:01:41.667383+00:00 app[web.1]:[39m DEPRECATION WARNING: The configuration option `config.serve_static_assets` has been renamed to `config.serve_static_files` to clarify its role (it merely enables serving everything in the `public` folder and is unrelated to the asset pipeline). The `serve_static_assets` alias will be removed in Rails 5.0. Please migrate your configuration files accordingly. (called from block in <top (required)> at /app/config/environments/production.rb:32)
-[36m2016-08-04T18:01:41.
+[36m2016-08-04T18:01:41.682045+00:00 app[web.1]:[39m config.eager_load is set to nil. Please update your config/environments/*.rb files accordingly:
+[36m2016-08-04T18:01:41.682048+00:00 app[web.1]:[39m 
+[36m2016-08-04T18:01:41.682049+00:00 app[web.1]:[39m   * development - set it to false
+[36m2016-08-04T18:01:41.682050+00:00 app[web.1]:[39m   * test - set it to false (unless you use a tool that preloads your test environment)
+[36m2016-08-04T18:01:41.682051+00:00 app[web.1]:[39m   * production - set it to true
+[36m2016-08-04T18:01:41.682051+00:00 app[web.1]:[39m 
+[36m2016-08-04T18:01:41.683660+00:00 app[web.1]:[39m DEPRECATION WARNING: You did not specify a `log_level` in `production.rb`. Currently, the default value for `log_level` is `:info` for the production environment and `:debug` in all other environments. In Rails 5 the default value will be unified to `:debug` across all environments. To preserve the current setting, add the following line to your `production.rb`:
+[36m2016-08-04T18:01:41.683661+00:00 app[web.1]:[39m 
+[36m2016-08-04T18:01:41.683662+00:00 app[web.1]:[39m    config.log_level = :info
+[36m2016-08-04T18:01:41.683662+00:00 app[web.1]:[39m 
+[36m2016-08-04T18:01:41.683663+00:00 app[web.1]:[39m . (called from block in tsort_each at /app/vendor/ruby-2.0.0/lib/ruby/2.0.0/tsort.rb:150)
+[36m2016-08-04T18:01:43.031363+00:00 app[web.1]:[39m [2016-08-04 18:01:43] INFO  WEBrick 1.3.1
+[36m2016-08-04T18:01:43.031373+00:00 app[web.1]:[39m [2016-08-04 18:01:43] INFO  ruby 2.0.0 (2015-12-16) [x86_64-linux]
+[36m2016-08-04T18:01:43.031667+00:00 app[web.1]:[39m [2016-08-04 18:01:43] INFO  WEBrick::HTTPServer#start: pid=3 port=44627
+[36m2016-08-04T18:01:43.206805+00:00 heroku[web.1]:[39m State changed from starting to up
+^C[?25h]0;lemmy@lemmy: ~/projects/yemek_koala-masterlemmy@lemmy:~/projects/yemek_koala-master$ heroku logs -t[Krails plugin new  git://github.com/adamwiggins/gmail_smtp.git[3@install[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4@script/plugin -v[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2@$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cscript/plgi[Kls[Kcd yemek_koala-master/ls[Kcd projects/bundle exec sidekiqls[Kcd yemek_koala-master/ls[Kcd projects/[1Psudo reboot[K[K[K[K[K[K[K[K[K[K[Kad[K[Kgi[K[Kls^C
+]0;lemmy@lemmy: ~/projects/yemek_koala-masterlemmy@lemmy:~/projects/yemek_koala-master$ git add ."[K
+]0;lemmy@lemmy: ~/projects/yemek_koala-masterlemmy@lemmy:~/projects/yemek_koala-master$ gti [K[K[Kit commot -m[K[K[K[K[Kit -m ",gkrg"
+[master d0f6953] ,gkrg
+ 2 files changed, 409 insertions(+), 4 deletions(-)
+ create mode 100644 yemek_koala-master/typescript
+]0;lemmy@lemmy: ~/projects/yemek_koala-masterlemmy@lemmy:~/projects/yemek_koala-master$ gt[Kit push heroku master[C[C[C[C[1@f[C[1@ [1P[1P[C[1@ [1@f[1@o[1@r[1@c[1@e
+fatal: 'force' does not appear to be a git repository
+fatal: The remote end hung up unexpectedly
+]0;lemmy@lemmy: ~/projects/yemek_koala-masterlemmy@lemmy:~/projects/yemek_koala-master$ git push force heroku master[7Pcommit -m ",gkrg"add .[Kcommit -m ",gkrg"push force heroku master[1P[1P[1P[1P[1P[1P
+remote: Compressing source files... done.[K
+remote: Building source:[K
+remote: 
+remote: -----> Ruby app detected[K
+remote: -----> Compiling Ruby/Rails[K
+remote: -----> Using Ruby version: ruby-2.0.0[K
+remote: -----> Installing dependencies using bundler 1.11.2[K
+remote:        Running: bundle install --without development:test --path vendor/bundle --binstubs vendor/bundle/bin -j4 --deployment[K
+remote:        Rubygems 2.0.14.1 is not threadsafe, so your gems will be installed one at a time. Upgrade to Rubygems 2.1.0 or higher to enable parallel gem installation.[K
+remote:        Using rake 11.2.2[K
+remote:        Using i18n 0.7.0[K
+remote:        Using json 1.8.3[K
+remote:        Using minitest 5.9.0[K
+remote:        Using thread_safe 0.3.5[K
+remote:        Using builder 3.2.2[K
+remote:        Using erubis 2.7.0[K
+remote:        Using mini_portile2 2.1.0[K
+remote:        Using pkg-config 1.1.7[K
+remote:        Using rack 1.6.4[K
+remote:        Using mime-types-data 3.2016.0521[K
+remote:        Using arel 6.0.3[K
+remote:        Using addressable 2.4.0[K
+remote:        Using coffee-script-source 1.10.0[K
+remote:        Using execjs 2.7.0[K
+remote:        Using thor 0.19.1[K
+remote:        Using concurrent-ruby 1.0.2[K
+remote:        Using connection_pool 2.2.0[K
+remote:        Using multipart-post 2.0.0[K
+remote:        Using multi_json 1.12.1[K
+remote:        Using libv8 3.16.14.15[K
+remote:        Using pg 0.18.4[K
+remote:        Using bundler 1.11.2[K
+remote:        Using redis 3.3.1[K
+remote:        Using ref 2.0.0[K
+remote:        Using sass 3.4.22[K
+remote:        Using tilt 2.0.5[K
+remote:        Using turbolinks-source 5.0.0[K
+remote:        Using rdoc 4.2.2[K
+remote:        Using tzinfo 1.2.2[K
+remote:        Using nokogiri 1.6.8[K
+remote:        Using rack-test 0.6.3[K
+remote:        Using rack-protection 1.5.3[K
+remote:        Using mime-types 3.1[K
+remote:        Using coffee-script 2.4.1[K
+remote:        Using uglifier 3.0.0[K
+remote:        Using sprockets 3.7.0[K
+remote:        Using sucker_punch 2.0.2[K
+remote:        Using faraday 0.9.2[K
+remote:        Using therubyracer 0.12.2[K
+remote:        Using turbolinks 5.0.0[K
+remote:        Using sdoc 0.4.1[K
+remote:        Using activesupport 4.2.3[K
+remote:        Using loofah 2.0.3[K
+remote:        Using sinatra 1.4.7[K
+remote:        Using mail 2.6.4[K
+remote:        Using koala 2.4.0[K
+remote:        Using rails-deprecated_sanitizer 1.0.3[K
+remote:        Using globalid 0.3.7[K
+remote:        Using activemodel 4.2.3[K
+remote:        Using jbuilder 2.6.0[K
+remote:        Using rails-html-sanitizer 1.0.3[K
+remote:        Using sidekiq 4.1.4[K
+remote:        Using rails-dom-testing 1.0.7[K
+remote:        Using activejob 4.2.3[K
+remote:        Using activerecord 4.2.3[K
+remote:        Using actionview 4.2.3[K
+remote:        Using actionpack 4.2.3[K
+remote:        Using actionmailer 4.2.3[K
+remote:        Using railties 4.2.3[K
+remote:        Using sprockets-rails 3.1.1[K
+remote:        Using coffee-rails 4.1.1[K
+remote:        Using jquery-rails 4.1.1[K
+remote:        Using rails 4.2.3[K
+remote:        Using sass-rails 5.0.6[K
+remote:        Bundle complete! 15 Gemfile dependencies, 65 gems now installed.[K
+remote:        Gems in the groups development and test were not installed.[K
+remote:        Bundled gems are installed into ./vendor/bundle.[K
+remote:        Bundle completed (0.38s)[K
+remote:        Cleaning up the bundler cache.[K
+remote: -----> Preparing app for Rails asset pipeline[K
+remote:        Running: rake assets:precompile[K
+remote:        DEPRECATION WARNING: The configuration option `config.serve_static_assets` has been renamed to `config.serve_static_files` to clarify its role (it merely enables serving everything in the `public` folder and is unrelated to the asset pipeline). The `serve_static_assets` alias will be removed in Rails 5.0. Please migrate your configuration files accordingly. (called from block in <top (required)> at /tmp/build_2267f7814cce4acf407b8c088159b7c3/yemek_koala-master/config/environments/production.rb:32)[K
+remote:        config.eager_load is set to nil. Please update your config/environments/*.rb files accordingly:[K
+remote:        * development - set it to false[K
+remote:        * test - set it to false (unless you use a tool that preloads your test environment)[K
+remote:        * production - set it to true[K
+remote:        DEPRECATION WARNING: You did not specify a `log_level` in `production.rb`. Currently, the default value for `log_level` is `:info` for the production environment and `:debug` in all other environments. In Rails 5 the default value will be unified to `:debug` across all environments. To preserve the current setting, add the following line to your `production.rb`:[K
+remote:        config.log_level = :info[K
+remote:        . (called from block in tsort_each at /tmp/build_2267f7814cce4acf407b8c088159b7c3/yemek_koala-master/vendor/ruby-2.0.0/lib/ruby/2.0.0/tsort.rb:150)[K
+remote:        Asset precompilation completed (1.83s)[K
+remote:        Cleaning assets[K
+remote:        Running: rake assets:clean[K
+remote:        DEPRECATION WARNING: The configuration option `config.serve_static_assets` has been renamed to `config.serve_static_files` to clarify its role (it merely enables serving everything in the `public` folder and is unrelated to the asset pipeline). The `serve_static_assets` alias will be removed in Rails 5.0. Please migrate your configuration files accordingly. (called from block in <top (required)> at /tmp/build_2267f7814cce4acf407b8c088159b7c3/yemek_koala-master/config/environments/production.rb:32)[K
+remote:        config.eager_load is set to nil. Please update your config/environments/*.rb files accordingly:[K
+remote:        * development - set it to false[K
+remote:        * test - set it to false (unless you use a tool that preloads your test environment)[K
+remote:        * production - set it to true[K
+remote:        DEPRECATION WARNING: You did not specify a `log_level` in `production.rb`. Currently, the default value for `log_level` is `:info` for the production environment and `:debug` in all other environments. In Rails 5 the default value will be unified to `:debug` across all environments. To preserve the current setting, add the following line to your `production.rb`:[K
+remote:        config.log_level = :info[K
+remote:        . (called from block in tsort_each at /tmp/build_2267f7814cce4acf407b8c088159b7c3/yemek_koala-master/vendor/ruby-2.0.0/lib/ruby/2.0.0/tsort.rb:150)[K
+remote: 
+remote: ###### WARNING:[K
+remote:        Include 'rails_12factor' gem to enable all platform features[K
+remote:        See https://devcenter.heroku.com/articles/rails-integration-gems for more information.[K
+remote: 
+remote: ###### WARNING:[K
+remote:        You have not declared a Ruby version in your Gemfile.[K
+remote:        To set your Ruby version add this line to your Gemfile:[K
+remote:        ruby '2.0.0'[K
+remote:        # See https://devcenter.heroku.com/articles/ruby-versions for more information.[K
+remote: 
+remote: ###### WARNING:[K
+remote:        No Procfile detected, using the default web server.[K
+remote:        We recommend explicitly declaring how to boot your server process via a Procfile.[K
+remote:        https://devcenter.heroku.com/articles/ruby-default-web-server[K
+remote: 
+remote: -----> Discovering process types[K
+remote:        Procfile declares types     -> (none)[K
+remote:        Default types for buildpack -> console, rake, web, worker[K
+remote: 
+remote: -----> Compressing...[K
+remote:        Done: 39.2M[K
+remote: -----> Launching...[K
+remote:        Released v120[K
+remote:        https://ticketz.herokuapp.com/ deployed to Heroku[K
+remote: 
+remote: Verifying deploy... done.[K
+To https://git.heroku.com/ticketz.git
+   b209408..d0f6953  master -> master
+]0;lemmy@lemmy: ~/projects/yemek_koala-masterlemmy@lemmy:~/projects/yemek_koala-master$ herok u[K[Ku logs
+[36m2016-08-04T18:01:41.682049+00:00 app[web.1]:[39m   * development - set it to false
+[36m2016-08-04T18:01:41.682051+00:00 app[web.1]:[39m 
+[36m2016-08-04T18:01:41.683661+00:00 app[web.1]:[39m 
+[36m2016-08-04T18:01:41.683662+00:00 app[web.1]:[39m    config.log_level = :info
+[36m2016-08-04T18:01:41.682051+00:00 app[web.1]:[39m   * production - set it to true
+[36m2016-08-04T18:01:41.683662+00:00 app[web.1]:[39m 
+[36m2016-08-04T18:01:41.683663+00:00 app[web.1]:[39m . (called from block in tsort_each at /app/vendor/ruby-2.0.0/lib/ruby/2.0.0/tsort.rb:150)
+[36m2016-08-04T18:01:41.682050+00:00 app[web.1]:[39m   * test - set it to false (unless you use a tool that preloads your test environment)
+[36m2016-08-04T18:01:41.683660+00:00 app[web.1]:[39m DEPRECATION WARNING: You did not specify a `log_level` in `production.rb`. Currently, the default value for `log_level` is `:info` for the production environment and `:debug` in all other environments. In Rails 5 the default value will be unified to `:debug` across all environments. To preserve the current setting, add the following line to your `production.rb`:
+[36m2016-08-04T18:01:43.031667+00:00 app[web.1]:[39m [2016-08-04 18:01:43] INFO  WEBrick::HTTPServer#start: pid=3 port=44627
+[36m2016-08-04T18:01:43.031373+00:00 app[web.1]:[39m [2016-08-04 18:01:43] INFO  ruby 2.0.0 (2015-12-16) [x86_64-linux]
+[36m2016-08-04T18:01:43.031363+00:00 app[web.1]:[39m [2016-08-04 18:01:43] INFO  WEBrick 1.3.1
+[36m2016-08-04T18:01:43.206805+00:00 heroku[web.1]:[39m State changed from starting to up
+[35m2016-08-04T18:08:51.953590+00:00 heroku[api]:[39m Deploy d0f6953 by michael@mittermayr.com
+[35m2016-08-04T18:08:51.953657+00:00 heroku[api]:[39m Release v120 created by michael@mittermayr.com
+[33m2016-08-04T18:08:52.165655+00:00 heroku[slug-compiler]:[39m Slug compilation finished
+[33m2016-08-04T18:08:52.165647+00:00 heroku[slug-compiler]:[39m Slug compilation started
+[36m2016-08-04T18:08:52.137861+00:00 heroku[web.1]:[39m Restarting
+[36m2016-08-04T18:08:52.138519+00:00 heroku[web.1]:[39m State changed from up to starting
+[36m2016-08-04T18:08:55.487655+00:00 heroku[web.1]:[39m Stopping all processes with SIGTERM
+[36m2016-08-04T18:08:55.995176+00:00 heroku[web.1]:[39m Starting process with command `bin/rails server -p 14460 -e $RAILS_ENV`
+[36m2016-08-04T18:08:56.241310+00:00 app[web.1]:[39m 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:170:in `select'
+[36m2016-08-04T18:08:56.241907+00:00 app[web.1]:[39m 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:160:in `start'
+[36m2016-08-04T18:08:56.241299+00:00 app[web.1]:[39m [2016-08-04 18:08:56] FATAL SignalException: SIGTERM
+[36m2016-08-04T18:08:56.241912+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.3/lib/rails/commands/commands_tasks.rb:75:in `tap'
+[36m2016-08-04T18:08:56.241905+00:00 app[web.1]:[39m 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:170:in `block in start'
+[36m2016-08-04T18:08:56.241907+00:00 app[web.1]:[39m 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:32:in `start'
+[36m2016-08-04T18:08:56.241908+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/rack-1.6.4/lib/rack/handler/webrick.rb:34:in `run'
+[36m2016-08-04T18:08:56.241908+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/rack-1.6.4/lib/rack/server.rb:286:in `start'
+[36m2016-08-04T18:08:56.241913+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.3/lib/rails/commands/commands_tasks.rb:75:in `server'
+[36m2016-08-04T18:08:56.241913+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.3/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+[36m2016-08-04T18:08:56.241914+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.3/lib/rails/commands.rb:17:in `<top (required)>'
+[36m2016-08-04T18:08:56.241915+00:00 app[web.1]:[39m 	bin/rails:4:in `require'
+[36m2016-08-04T18:08:56.241916+00:00 app[web.1]:[39m 	bin/rails:4:in `<main>'
+[36m2016-08-04T18:08:56.300678+00:00 app[web.1]:[39m => Rails 4.2.3 application starting in production on http://0.0.0.0:44627
+[36m2016-08-04T18:08:56.241921+00:00 app[web.1]:[39m [2016-08-04 18:08:56] INFO  going to shutdown ...
+[36m2016-08-04T18:08:56.241922+00:00 app[web.1]:[39m [2016-08-04 18:08:56] INFO  WEBrick::HTTPServer#start done.
+[36m2016-08-04T18:08:56.300674+00:00 app[web.1]:[39m => Booting WEBrick
+[36m2016-08-04T18:08:56.241909+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.3/lib/rails/commands/server.rb:80:in `start'
+[36m2016-08-04T18:08:56.300683+00:00 app[web.1]:[39m Exiting
+[36m2016-08-04T18:08:56.241911+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.3/lib/rails/commands/commands_tasks.rb:80:in `block in server'
+[36m2016-08-04T18:08:56.300679+00:00 app[web.1]:[39m => Run `rails server -h` for more startup options
+[36m2016-08-04T18:08:56.300679+00:00 app[web.1]:[39m => Ctrl-C to shutdown server
+[36m2016-08-04T18:08:56.419986+00:00 heroku[web.1]:[39m Process exited with status 143
+[36m2016-08-04T18:09:01.467137+00:00 heroku[web.1]:[39m Restarting
+[36m2016-08-04T18:09:01.394759+00:00 app[web.1]:[39m DEPRECATION WARNING: The configuration option `config.serve_static_assets` has been renamed to `config.serve_static_files` to clarify its role (it merely enables serving everything in the `public` folder and is unrelated to the asset pipeline). The `serve_static_assets` alias will be removed in Rails 5.0. Please migrate your configuration files accordingly. (called from block in <top (required)> at /app/config/environments/production.rb:32)
+[36m2016-08-04T18:09:01.410036+00:00 app[web.1]:[39m   * production - set it to true
+[36m2016-08-04T18:09:01.410037+00:00 app[web.1]:[39m 
+[36m2016-08-04T18:09:01.410015+00:00 app[web.1]:[39m config.eager_load is set to nil. Please update your config/environments/*.rb files accordingly:
+[36m2016-08-04T18:09:01.411918+00:00 app[web.1]:[39m DEPRECATION WARNING: You did not specify a `log_level` in `production.rb`. Currently, the default value for `log_level` is `:info` for the production environment and `:debug` in all other environments. In Rails 5 the default value will be unified to `:debug` across all environments. To preserve the current setting, add the following line to your `production.rb`:
+[36m2016-08-04T18:09:01.410027+00:00 app[web.1]:[39m 
+[36m2016-08-04T18:09:01.410035+00:00 app[web.1]:[39m   * test - set it to false (unless you use a tool that preloads your test environment)
+[36m2016-08-04T18:09:01.410034+00:00 app[web.1]:[39m   * development - set it to false
+[36m2016-08-04T18:09:01.411921+00:00 app[web.1]:[39m    config.log_level = :info
+[36m2016-08-04T18:09:01.411922+00:00 app[web.1]:[39m 
+[36m2016-08-04T18:09:01.411921+00:00 app[web.1]:[39m 
+[36m2016-08-04T18:09:01.411923+00:00 app[web.1]:[39m . (called from block in tsort_each at /app/vendor/ruby-2.0.0/lib/ruby/2.0.0/tsort.rb:150)
+[36m2016-08-04T18:09:02.989582+00:00 app[web.1]:[39m [2016-08-04 18:09:02] INFO  ruby 2.0.0 (2015-12-16) [x86_64-linux]
+[36m2016-08-04T18:09:02.988945+00:00 app[web.1]:[39m [2016-08-04 18:09:02] INFO  WEBrick 1.3.1
+[36m2016-08-04T18:09:02.989953+00:00 app[web.1]:[39m [2016-08-04 18:09:02] INFO  WEBrick::HTTPServer#start: pid=3 port=14460
+[36m2016-08-04T18:09:04.437796+00:00 heroku[web.1]:[39m Starting process with command `bin/rails server -p 56339 -e $RAILS_ENV`
+[36m2016-08-04T18:09:08.295779+00:00 app[web.1]:[39m DEPRECATION WARNING: The configuration option `config.serve_static_assets` has been renamed to `config.serve_static_files` to clarify its role (it merely enables serving everything in the `public` folder and is unrelated to the asset pipeline). The `serve_static_assets` alias will be removed in Rails 5.0. Please migrate your configuration files accordingly. (called from block in <top (required)> at /app/config/environments/production.rb:32)
+[36m2016-08-04T18:09:08.312217+00:00 app[web.1]:[39m   * development - set it to false
+[36m2016-08-04T18:09:08.312213+00:00 app[web.1]:[39m config.eager_load is set to nil. Please update your config/environments/*.rb files accordingly:
+[36m2016-08-04T18:09:08.312218+00:00 app[web.1]:[39m   * production - set it to true
+[36m2016-08-04T18:09:08.312219+00:00 app[web.1]:[39m 
+[36m2016-08-04T18:09:08.312216+00:00 app[web.1]:[39m 
+[36m2016-08-04T18:09:08.316816+00:00 app[web.1]:[39m 
+[36m2016-08-04T18:09:08.316817+00:00 app[web.1]:[39m    config.log_level = :info
+[36m2016-08-04T18:09:08.316818+00:00 app[web.1]:[39m 
+[36m2016-08-04T18:09:08.316819+00:00 app[web.1]:[39m . (called from block in tsort_each at /app/vendor/ruby-2.0.0/lib/ruby/2.0.0/tsort.rb:150)
+[36m2016-08-04T18:09:08.312217+00:00 app[web.1]:[39m   * test - set it to false (unless you use a tool that preloads your test environment)
+[36m2016-08-04T18:09:08.432635+00:00 heroku[web.1]:[39m Stopping all processes with SIGTERM
+[36m2016-08-04T18:09:08.316815+00:00 app[web.1]:[39m DEPRECATION WARNING: You did not specify a `log_level` in `production.rb`. Currently, the default value for `log_level` is `:info` for the production environment and `:debug` in all other environments. In Rails 5 the default value will be unified to `:debug` across all environments. To preserve the current setting, add the following line to your `production.rb`:
+[36m2016-08-04T18:09:09.321511+00:00 app[web.1]:[39m 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:160:in `start'
+[36m2016-08-04T18:09:09.321509+00:00 app[web.1]:[39m 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:170:in `block in start'
+[36m2016-08-04T18:09:09.321494+00:00 app[web.1]:[39m [2016-08-04 18:09:09] FATAL SignalException: SIGTERM
+[36m2016-08-04T18:09:09.321508+00:00 app[web.1]:[39m 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:170:in `select'
+[36m2016-08-04T18:09:09.321512+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/rack-1.6.4/lib/rack/server.rb:286:in `start'
+[36m2016-08-04T18:09:09.321516+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.3/lib/rails/commands.rb:17:in `<top (required)>'
+[36m2016-08-04T18:09:09.321515+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.3/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+[36m2016-08-04T18:09:09.321515+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.3/lib/rails/commands/commands_tasks.rb:75:in `server'
+[36m2016-08-04T18:09:09.321513+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.3/lib/rails/commands/commands_tasks.rb:80:in `block in server'
+[36m2016-08-04T18:09:09.321514+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.3/lib/rails/commands/commands_tasks.rb:75:in `tap'
+[36m2016-08-04T18:09:09.321511+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/rack-1.6.4/lib/rack/handler/webrick.rb:34:in `run'
+[36m2016-08-04T18:09:09.321517+00:00 app[web.1]:[39m 	bin/rails:4:in `require'
+[36m2016-08-04T18:09:09.321518+00:00 app[web.1]:[39m 	bin/rails:4:in `<main>'
+[36m2016-08-04T18:09:09.321790+00:00 app[web.1]:[39m [2016-08-04 18:09:09] INFO  going to shutdown ...
+[36m2016-08-04T18:09:09.321513+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.3/lib/rails/commands/server.rb:80:in `start'
+[36m2016-08-04T18:09:09.321510+00:00 app[web.1]:[39m 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:32:in `start'
+[36m2016-08-04T18:09:09.389318+00:00 app[web.1]:[39m => Run `rails server -h` for more startup options
+[36m2016-08-04T18:09:09.321847+00:00 app[web.1]:[39m [2016-08-04 18:09:09] INFO  WEBrick::HTTPServer#start done.
+[36m2016-08-04T18:09:09.389314+00:00 app[web.1]:[39m => Booting WEBrick
+[36m2016-08-04T18:09:09.389317+00:00 app[web.1]:[39m => Rails 4.2.3 application starting in production on http://0.0.0.0:14460
+[36m2016-08-04T18:09:09.389320+00:00 app[web.1]:[39m Exiting
+[36m2016-08-04T18:09:09.389319+00:00 app[web.1]:[39m => Ctrl-C to shutdown server
+[36m2016-08-04T18:09:09.351226+00:00 app[web.1]:[39m [2016-08-04 18:09:09] INFO  WEBrick::HTTPServer#start: pid=3 port=56339
+[36m2016-08-04T18:09:09.521821+00:00 heroku[web.1]:[39m Process exited with status 143
+[36m2016-08-04T18:09:09.350927+00:00 app[web.1]:[39m [2016-08-04 18:09:09] INFO  ruby 2.0.0 (2015-12-16) [x86_64-linux]
+[36m2016-08-04T18:09:09.350907+00:00 app[web.1]:[39m [2016-08-04 18:09:09] INFO  WEBrick 1.3.1
+[36m2016-08-04T18:09:09.477176+00:00 heroku[web.1]:[39m State changed from starting to up
+[?25h]0;lemmy@lemmy: ~/projects/yemek_koala-masterlemmy@lemmy:~/projects/yemek_koala-master$ heroku logs
+[36m2016-08-04T18:01:41.683663+00:00 app[web.1]:[39m . (called from block in tsort_each at /app/vendor/ruby-2.0.0/lib/ruby/2.0.0/tsort.rb:150)
+[36m2016-08-04T18:01:41.682050+00:00 app[web.1]:[39m   * test - set it to false (unless you use a tool that preloads your test environment)
+[36m2016-08-04T18:01:41.683660+00:00 app[web.1]:[39m DEPRECATION WARNING: You did not specify a `log_level` in `production.rb`. Currently, the default value for `log_level` is `:info` for the production environment and `:debug` in all other environments. In Rails 5 the default value will be unified to `:debug` across all environments. To preserve the current setting, add the following line to your `production.rb`:
+[36m2016-08-04T18:01:43.031667+00:00 app[web.1]:[39m [2016-08-04 18:01:43] INFO  WEBrick::HTTPServer#start: pid=3 port=44627
+[36m2016-08-04T18:01:43.031373+00:00 app[web.1]:[39m [2016-08-04 18:01:43] INFO  ruby 2.0.0 (2015-12-16) [x86_64-linux]
+[36m2016-08-04T18:01:43.031363+00:00 app[web.1]:[39m [2016-08-04 18:01:43] INFO  WEBrick 1.3.1
+[36m2016-08-04T18:01:43.206805+00:00 heroku[web.1]:[39m State changed from starting to up
+[35m2016-08-04T18:08:51.953590+00:00 heroku[api]:[39m Deploy d0f6953 by michael@mittermayr.com
+[35m2016-08-04T18:08:51.953657+00:00 heroku[api]:[39m Release v120 created by michael@mittermayr.com
+[33m2016-08-04T18:08:52.165655+00:00 heroku[slug-compiler]:[39m Slug compilation finished
+[33m2016-08-04T18:08:52.165647+00:00 heroku[slug-compiler]:[39m Slug compilation started
+[36m2016-08-04T18:08:52.137861+00:00 heroku[web.1]:[39m Restarting
+[36m2016-08-04T18:08:52.138519+00:00 heroku[web.1]:[39m State changed from up to starting
+[36m2016-08-04T18:08:55.487655+00:00 heroku[web.1]:[39m Stopping all processes with SIGTERM
+[36m2016-08-04T18:08:55.995176+00:00 heroku[web.1]:[39m Starting process with command `bin/rails server -p 14460 -e $RAILS_ENV`
+[36m2016-08-04T18:08:56.241310+00:00 app[web.1]:[39m 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:170:in `select'
+[36m2016-08-04T18:08:56.241907+00:00 app[web.1]:[39m 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:160:in `start'
+[36m2016-08-04T18:08:56.241299+00:00 app[web.1]:[39m [2016-08-04 18:08:56] FATAL SignalException: SIGTERM
+[36m2016-08-04T18:08:56.241912+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.3/lib/rails/commands/commands_tasks.rb:75:in `tap'
+[36m2016-08-04T18:08:56.241905+00:00 app[web.1]:[39m 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:170:in `block in start'
+[36m2016-08-04T18:08:56.241907+00:00 app[web.1]:[39m 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:32:in `start'
+[36m2016-08-04T18:08:56.241908+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/rack-1.6.4/lib/rack/handler/webrick.rb:34:in `run'
+[36m2016-08-04T18:08:56.241908+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/rack-1.6.4/lib/rack/server.rb:286:in `start'
+[36m2016-08-04T18:08:56.241913+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.3/lib/rails/commands/commands_tasks.rb:75:in `server'
+[36m2016-08-04T18:08:56.241913+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.3/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+[36m2016-08-04T18:08:56.241914+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.3/lib/rails/commands.rb:17:in `<top (required)>'
+[36m2016-08-04T18:08:56.241915+00:00 app[web.1]:[39m 	bin/rails:4:in `require'
+[36m2016-08-04T18:08:56.241916+00:00 app[web.1]:[39m 	bin/rails:4:in `<main>'
+[36m2016-08-04T18:08:56.300678+00:00 app[web.1]:[39m => Rails 4.2.3 application starting in production on http://0.0.0.0:44627
+[36m2016-08-04T18:08:56.241921+00:00 app[web.1]:[39m [2016-08-04 18:08:56] INFO  going to shutdown ...
+[36m2016-08-04T18:08:56.241922+00:00 app[web.1]:[39m [2016-08-04 18:08:56] INFO  WEBrick::HTTPServer#start done.
+[36m2016-08-04T18:08:56.300674+00:00 app[web.1]:[39m => Booting WEBrick
+[36m2016-08-04T18:08:56.241909+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.3/lib/rails/commands/server.rb:80:in `start'
+[36m2016-08-04T18:08:56.300683+00:00 app[web.1]:[39m Exiting
+[36m2016-08-04T18:08:56.241911+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.3/lib/rails/commands/commands_tasks.rb:80:in `block in server'
+[36m2016-08-04T18:08:56.300679+00:00 app[web.1]:[39m => Run `rails server -h` for more startup options
+[36m2016-08-04T18:08:56.300679+00:00 app[web.1]:[39m => Ctrl-C to shutdown server
+[36m2016-08-04T18:08:56.419986+00:00 heroku[web.1]:[39m Process exited with status 143
+[36m2016-08-04T18:09:01.467137+00:00 heroku[web.1]:[39m Restarting
+[36m2016-08-04T18:09:01.394759+00:00 app[web.1]:[39m DEPRECATION WARNING: The configuration option `config.serve_static_assets` has been renamed to `config.serve_static_files` to clarify its role (it merely enables serving everything in the `public` folder and is unrelated to the asset pipeline). The `serve_static_assets` alias will be removed in Rails 5.0. Please migrate your configuration files accordingly. (called from block in <top (required)> at /app/config/environments/production.rb:32)
+[36m2016-08-04T18:09:01.410036+00:00 app[web.1]:[39m   * production - set it to true
+[36m2016-08-04T18:09:01.410037+00:00 app[web.1]:[39m 
+[36m2016-08-04T18:09:01.410015+00:00 app[web.1]:[39m config.eager_load is set to nil. Please update your config/environments/*.rb files accordingly:
+[36m2016-08-04T18:09:01.411918+00:00 app[web.1]:[39m DEPRECATION WARNING: You did not specify a `log_level` in `production.rb`. Currently, the default value for `log_level` is `:info` for the production environment and `:debug` in all other environments. In Rails 5 the default value will be unified to `:debug` across all environments. To preserve the current setting, add the following line to your `production.rb`:
+[36m2016-08-04T18:09:01.410027+00:00 app[web.1]:[39m 
+[36m2016-08-04T18:09:01.410035+00:00 app[web.1]:[39m   * test - set it to false (unless you use a tool that preloads your test environment)
+[36m2016-08-04T18:09:01.410034+00:00 app[web.1]:[39m   * development - set it to false
+[36m2016-08-04T18:09:01.411921+00:00 app[web.1]:[39m    config.log_level = :info
+[36m2016-08-04T18:09:01.411922+00:00 app[web.1]:[39m 
+[36m2016-08-04T18:09:01.411921+00:00 app[web.1]:[39m 
+[36m2016-08-04T18:09:01.411923+00:00 app[web.1]:[39m . (called from block in tsort_each at /app/vendor/ruby-2.0.0/lib/ruby/2.0.0/tsort.rb:150)
+[36m2016-08-04T18:09:02.989582+00:00 app[web.1]:[39m [2016-08-04 18:09:02] INFO  ruby 2.0.0 (2015-12-16) [x86_64-linux]
+[36m2016-08-04T18:09:02.988945+00:00 app[web.1]:[39m [2016-08-04 18:09:02] INFO  WEBrick 1.3.1
+[36m2016-08-04T18:09:02.989953+00:00 app[web.1]:[39m [2016-08-04 18:09:02] INFO  WEBrick::HTTPServer#start: pid=3 port=14460
+[36m2016-08-04T18:09:04.437796+00:00 heroku[web.1]:[39m Starting process with command `bin/rails server -p 56339 -e $RAILS_ENV`
+[36m2016-08-04T18:09:08.295779+00:00 app[web.1]:[39m DEPRECATION WARNING: The configuration option `config.serve_static_assets` has been renamed to `config.serve_static_files` to clarify its role (it merely enables serving everything in the `public` folder and is unrelated to the asset pipeline). The `serve_static_assets` alias will be removed in Rails 5.0. Please migrate your configuration files accordingly. (called from block in <top (required)> at /app/config/environments/production.rb:32)
+[36m2016-08-04T18:09:08.312217+00:00 app[web.1]:[39m   * development - set it to false
+[36m2016-08-04T18:09:08.312213+00:00 app[web.1]:[39m config.eager_load is set to nil. Please update your config/environments/*.rb files accordingly:
+[36m2016-08-04T18:09:08.312218+00:00 app[web.1]:[39m   * production - set it to true
+[36m2016-08-04T18:09:08.312219+00:00 app[web.1]:[39m 
+[36m2016-08-04T18:09:08.312216+00:00 app[web.1]:[39m 
+[36m2016-08-04T18:09:08.316816+00:00 app[web.1]:[39m 
+[36m2016-08-04T18:09:08.316817+00:00 app[web.1]:[39m    config.log_level = :info
+[36m2016-08-04T18:09:08.316818+00:00 app[web.1]:[39m 
+[36m2016-08-04T18:09:08.316819+00:00 app[web.1]:[39m . (called from block in tsort_each at /app/vendor/ruby-2.0.0/lib/ruby/2.0.0/tsort.rb:150)
+[36m2016-08-04T18:09:08.312217+00:00 app[web.1]:[39m   * test - set it to false (unless you use a tool that preloads your test environment)
+[36m2016-08-04T18:09:08.432635+00:00 heroku[web.1]:[39m Stopping all processes with SIGTERM
+[36m2016-08-04T18:09:08.316815+00:00 app[web.1]:[39m DEPRECATION WARNING: You did not specify a `log_level` in `production.rb`. Currently, the default value for `log_level` is `:info` for the production environment and `:debug` in all other environments. In Rails 5 the default value will be unified to `:debug` across all environments. To preserve the current setting, add the following line to your `production.rb`:
+[36m2016-08-04T18:09:09.321511+00:00 app[web.1]:[39m 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:160:in `start'
+[36m2016-08-04T18:09:09.321509+00:00 app[web.1]:[39m 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:170:in `block in start'
+[36m2016-08-04T18:09:09.321494+00:00 app[web.1]:[39m [2016-08-04 18:09:09] FATAL SignalException: SIGTERM
+[36m2016-08-04T18:09:09.321508+00:00 app[web.1]:[39m 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:170:in `select'
+[36m2016-08-04T18:09:09.321512+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/rack-1.6.4/lib/rack/server.rb:286:in `start'
+[36m2016-08-04T18:09:09.321516+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.3/lib/rails/commands.rb:17:in `<top (required)>'
+[36m2016-08-04T18:09:09.321515+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.3/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+[36m2016-08-04T18:09:09.321515+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.3/lib/rails/commands/commands_tasks.rb:75:in `server'
+[36m2016-08-04T18:09:09.321513+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.3/lib/rails/commands/commands_tasks.rb:80:in `block in server'
+[36m2016-08-04T18:09:09.321514+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.3/lib/rails/commands/commands_tasks.rb:75:in `tap'
+[36m2016-08-04T18:09:09.321511+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/rack-1.6.4/lib/rack/handler/webrick.rb:34:in `run'
+[36m2016-08-04T18:09:09.321517+00:00 app[web.1]:[39m 	bin/rails:4:in `require'
+[36m2016-08-04T18:09:09.321518+00:00 app[web.1]:[39m 	bin/rails:4:in `<main>'
+[36m2016-08-04T18:09:09.321790+00:00 app[web.1]:[39m [2016-08-04 18:09:09] INFO  going to shutdown ...
+[36m2016-08-04T18:09:09.321513+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.3/lib/rails/commands/server.rb:80:in `start'
+[36m2016-08-04T18:09:09.321510+00:00 app[web.1]:[39m 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:32:in `start'
+[36m2016-08-04T18:09:09.389318+00:00 app[web.1]:[39m => Run `rails server -h` for more startup options
+[36m2016-08-04T18:09:09.321847+00:00 app[web.1]:[39m [2016-08-04 18:09:09] INFO  WEBrick::HTTPServer#start done.
+[36m2016-08-04T18:09:09.389314+00:00 app[web.1]:[39m => Booting WEBrick
+[36m2016-08-04T18:09:09.389317+00:00 app[web.1]:[39m => Rails 4.2.3 application starting in production on http://0.0.0.0:14460
+[36m2016-08-04T18:09:09.389320+00:00 app[web.1]:[39m Exiting
+[36m2016-08-04T18:09:09.389319+00:00 app[web.1]:[39m => Ctrl-C to shutdown server
+[36m2016-08-04T18:09:09.351226+00:00 app[web.1]:[39m [2016-08-04 18:09:09] INFO  WEBrick::HTTPServer#start: pid=3 port=56339
+[36m2016-08-04T18:09:09.521821+00:00 heroku[web.1]:[39m Process exited with status 143
+[36m2016-08-04T18:09:09.350927+00:00 app[web.1]:[39m [2016-08-04 18:09:09] INFO  ruby 2.0.0 (2015-12-16) [x86_64-linux]
+[36m2016-08-04T18:09:09.350907+00:00 app[web.1]:[39m [2016-08-04 18:09:09] INFO  WEBrick 1.3.1
+[36m2016-08-04T18:09:09.477176+00:00 heroku[web.1]:[39m State changed from starting to up
+[32m2016-08-04T18:09:28.399804+00:00 heroku[router]:[39m at=info method=GET path="/javascripts/defaults.js" host=ticketz.herokuapp.com request_id=d3d50a78-e1c6-458e-a6d6-cbbc1b70216e fwd="91.115.72.34" dyno=web.1 connect=1ms service=41ms status=404 bytes=24086
+[32m2016-08-04T18:09:27.957762+00:00 heroku[router]:[39m at=info method=GET path="/" host=ticketz.herokuapp.com request_id=9c28334d-462d-4ede-b226-1783efa2426f fwd="91.115.72.34" dyno=web.1 connect=1ms service=299ms status=200 bytes=1338
+[32m2016-08-04T18:09:28.209357+00:00 heroku[router]:[39m at=info method=GET path="/stylesheets/all.css" host=ticketz.herokuapp.com request_id=aec3f0c5-f1b3-408c-bd10-14e750ef0e3e fwd="91.115.72.34" dyno=web.1 connect=2ms service=107ms status=404 bytes=24097
+[32m2016-08-04T18:09:35.631503+00:00 heroku[router]:[39m at=info method=GET path="/facebooks/new?utf8=%E2%9C%93&event_url=https%3A%2F%2Fwww.facebook.com%2Fevents%2F1482424362052376&email=michael%40mittermayr.com&commit=Subscribe" host=ticketz.herokuapp.com request_id=a914ddfa-a39e-4282-82e1-c7af457c2d9e fwd="91.115.72.34" dyno=web.1 connect=1ms service=15ms status=200 bytes=878
+[32m2016-08-04T18:09:35.858058+00:00 heroku[router]:[39m at=info method=GET path="/stylesheets/all.css" host=ticketz.herokuapp.com request_id=42e4c474-337e-4143-abf6-bfe18910fc0c fwd="91.115.72.34" dyno=web.1 connect=1ms service=40ms status=404 bytes=24095
+[32m2016-08-04T18:09:36.479679+00:00 heroku[router]:[39m at=info method=GET path="/javascripts/defaults.js" host=ticketz.herokuapp.com request_id=be8f17a5-dc18-4fbc-9456-f257bb9c2d6a fwd="91.115.72.34" dyno=web.1 connect=1ms service=355ms status=404 bytes=24086
+[?25h]0;lemmy@lemmy: ~/projects/yemek_koala-masterlemmy@lemmy:~/projects/yemek_koala-master$ heroku logs -z[Kt
+[36m2016-08-04T18:01:41.683663+00:00 app[web.1]:[39m . (called from block in tsort_each at /app/vendor/ruby-2.0.0/lib/ruby/2.0.0/tsort.rb:150)
+[36m2016-08-04T18:01:41.682050+00:00 app[web.1]:[39m   * test - set it to false (unless you use a tool that preloads your test environment)
+[36m2016-08-04T18:01:41.683660+00:00 app[web.1]:[39m DEPRECATION WARNING: You did not specify a `log_level` in `production.rb`. Currently, the default value for `log_level` is `:info` for the production environment and `:debug` in all other environments. In Rails 5 the default value will be unified to `:debug` across all environments. To preserve the current setting, add the following line to your `production.rb`:
+[36m2016-08-04T18:01:43.031667+00:00 app[web.1]:[39m [2016-08-04 18:01:43] INFO  WEBrick::HTTPServer#start: pid=3 port=44627
+[36m2016-08-04T18:01:43.031373+00:00 app[web.1]:[39m [2016-08-04 18:01:43] INFO  ruby 2.0.0 (2015-12-16) [x86_64-linux]
+[36m2016-08-04T18:01:43.031363+00:00 app[web.1]:[39m [2016-08-04 18:01:43] INFO  WEBrick 1.3.1
+[36m2016-08-04T18:01:43.206805+00:00 heroku[web.1]:[39m State changed from starting to up
+[35m2016-08-04T18:08:51.953590+00:00 heroku[api]:[39m Deploy d0f6953 by michael@mittermayr.com
+[35m2016-08-04T18:08:51.953657+00:00 heroku[api]:[39m Release v120 created by michael@mittermayr.com
+[33m2016-08-04T18:08:52.165655+00:00 heroku[slug-compiler]:[39m Slug compilation finished
+[33m2016-08-04T18:08:52.165647+00:00 heroku[slug-compiler]:[39m Slug compilation started
+[36m2016-08-04T18:08:52.137861+00:00 heroku[web.1]:[39m Restarting
+[36m2016-08-04T18:08:52.138519+00:00 heroku[web.1]:[39m State changed from up to starting
+[36m2016-08-04T18:08:55.487655+00:00 heroku[web.1]:[39m Stopping all processes with SIGTERM
+[36m2016-08-04T18:08:55.995176+00:00 heroku[web.1]:[39m Starting process with command `bin/rails server -p 14460 -e $RAILS_ENV`
+[36m2016-08-04T18:08:56.241310+00:00 app[web.1]:[39m 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:170:in `select'
+[36m2016-08-04T18:08:56.241907+00:00 app[web.1]:[39m 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:160:in `start'
+[36m2016-08-04T18:08:56.241299+00:00 app[web.1]:[39m [2016-08-04 18:08:56] FATAL SignalException: SIGTERM
+[36m2016-08-04T18:08:56.241912+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.3/lib/rails/commands/commands_tasks.rb:75:in `tap'
+[36m2016-08-04T18:08:56.241905+00:00 app[web.1]:[39m 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:170:in `block in start'
+[36m2016-08-04T18:08:56.241907+00:00 app[web.1]:[39m 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:32:in `start'
+[36m2016-08-04T18:08:56.241908+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/rack-1.6.4/lib/rack/handler/webrick.rb:34:in `run'
+[36m2016-08-04T18:08:56.241908+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/rack-1.6.4/lib/rack/server.rb:286:in `start'
+[36m2016-08-04T18:08:56.241913+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.3/lib/rails/commands/commands_tasks.rb:75:in `server'
+[36m2016-08-04T18:08:56.241913+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.3/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+[36m2016-08-04T18:08:56.241914+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.3/lib/rails/commands.rb:17:in `<top (required)>'
+[36m2016-08-04T18:08:56.241915+00:00 app[web.1]:[39m 	bin/rails:4:in `require'
+[36m2016-08-04T18:08:56.241916+00:00 app[web.1]:[39m 	bin/rails:4:in `<main>'
+[36m2016-08-04T18:08:56.300678+00:00 app[web.1]:[39m => Rails 4.2.3 application starting in production on http://0.0.0.0:44627
+[36m2016-08-04T18:08:56.241921+00:00 app[web.1]:[39m [2016-08-04 18:08:56] INFO  going to shutdown ...
+[36m2016-08-04T18:08:56.241922+00:00 app[web.1]:[39m [2016-08-04 18:08:56] INFO  WEBrick::HTTPServer#start done.
+[36m2016-08-04T18:08:56.300674+00:00 app[web.1]:[39m => Booting WEBrick
+[36m2016-08-04T18:08:56.241909+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.3/lib/rails/commands/server.rb:80:in `start'
+[36m2016-08-04T18:08:56.300683+00:00 app[web.1]:[39m Exiting
+[36m2016-08-04T18:08:56.241911+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.3/lib/rails/commands/commands_tasks.rb:80:in `block in server'
+[36m2016-08-04T18:08:56.300679+00:00 app[web.1]:[39m => Run `rails server -h` for more startup options
+[36m2016-08-04T18:08:56.300679+00:00 app[web.1]:[39m => Ctrl-C to shutdown server
+[36m2016-08-04T18:08:56.419986+00:00 heroku[web.1]:[39m Process exited with status 143
+[36m2016-08-04T18:09:01.467137+00:00 heroku[web.1]:[39m Restarting
+[36m2016-08-04T18:09:01.394759+00:00 app[web.1]:[39m DEPRECATION WARNING: The configuration option `config.serve_static_assets` has been renamed to `config.serve_static_files` to clarify its role (it merely enables serving everything in the `public` folder and is unrelated to the asset pipeline). The `serve_static_assets` alias will be removed in Rails 5.0. Please migrate your configuration files accordingly. (called from block in <top (required)> at /app/config/environments/production.rb:32)
+[36m2016-08-04T18:09:01.410036+00:00 app[web.1]:[39m   * production - set it to true
+[36m2016-08-04T18:09:01.410037+00:00 app[web.1]:[39m 
+[36m2016-08-04T18:09:01.410015+00:00 app[web.1]:[39m config.eager_load is set to nil. Please update your config/environments/*.rb files accordingly:
+[36m2016-08-04T18:09:01.411918+00:00 app[web.1]:[39m DEPRECATION WARNING: You did not specify a `log_level` in `production.rb`. Currently, the default value for `log_level` is `:info` for the production environment and `:debug` in all other environments. In Rails 5 the default value will be unified to `:debug` across all environments. To preserve the current setting, add the following line to your `production.rb`:
+[36m2016-08-04T18:09:01.410027+00:00 app[web.1]:[39m 
+[36m2016-08-04T18:09:01.410035+00:00 app[web.1]:[39m   * test - set it to false (unless you use a tool that preloads your test environment)
+[36m2016-08-04T18:09:01.410034+00:00 app[web.1]:[39m   * development - set it to false
+[36m2016-08-04T18:09:01.411921+00:00 app[web.1]:[39m    config.log_level = :info
+[36m2016-08-04T18:09:01.411922+00:00 app[web.1]:[39m 
+[36m2016-08-04T18:09:01.411921+00:00 app[web.1]:[39m 
+[36m2016-08-04T18:09:01.411923+00:00 app[web.1]:[39m . (called from block in tsort_each at /app/vendor/ruby-2.0.0/lib/ruby/2.0.0/tsort.rb:150)
+[36m2016-08-04T18:09:02.989582+00:00 app[web.1]:[39m [2016-08-04 18:09:02] INFO  ruby 2.0.0 (2015-12-16) [x86_64-linux]
+[36m2016-08-04T18:09:02.988945+00:00 app[web.1]:[39m [2016-08-04 18:09:02] INFO  WEBrick 1.3.1
+[36m2016-08-04T18:09:02.989953+00:00 app[web.1]:[39m [2016-08-04 18:09:02] INFO  WEBrick::HTTPServer#start: pid=3 port=14460
+[36m2016-08-04T18:09:04.437796+00:00 heroku[web.1]:[39m Starting process with command `bin/rails server -p 56339 -e $RAILS_ENV`
+[36m2016-08-04T18:09:08.295779+00:00 app[web.1]:[39m DEPRECATION WARNING: The configuration option `config.serve_static_assets` has been renamed to `config.serve_static_files` to clarify its role (it merely enables serving everything in the `public` folder and is unrelated to the asset pipeline). The `serve_static_assets` alias will be removed in Rails 5.0. Please migrate your configuration files accordingly. (called from block in <top (required)> at /app/config/environments/production.rb:32)
+[36m2016-08-04T18:09:08.312217+00:00 app[web.1]:[39m   * development - set it to false
+[36m2016-08-04T18:09:08.312213+00:00 app[web.1]:[39m config.eager_load is set to nil. Please update your config/environments/*.rb files accordingly:
+[36m2016-08-04T18:09:08.312218+00:00 app[web.1]:[39m   * production - set it to true
+[36m2016-08-04T18:09:08.312219+00:00 app[web.1]:[39m 
+[36m2016-08-04T18:09:08.312216+00:00 app[web.1]:[39m 
+[36m2016-08-04T18:09:08.316816+00:00 app[web.1]:[39m 
+[36m2016-08-04T18:09:08.316817+00:00 app[web.1]:[39m    config.log_level = :info
+[36m2016-08-04T18:09:08.316818+00:00 app[web.1]:[39m 
+[36m2016-08-04T18:09:08.316819+00:00 app[web.1]:[39m . (called from block in tsort_each at /app/vendor/ruby-2.0.0/lib/ruby/2.0.0/tsort.rb:150)
+[36m2016-08-04T18:09:08.312217+00:00 app[web.1]:[39m   * test - set it to false (unless you use a tool that preloads your test environment)
+[36m2016-08-04T18:09:08.432635+00:00 heroku[web.1]:[39m Stopping all processes with SIGTERM
+[36m2016-08-04T18:09:08.316815+00:00 app[web.1]:[39m DEPRECATION WARNING: You did not specify a `log_level` in `production.rb`. Currently, the default value for `log_level` is `:info` for the production environment and `:debug` in all other environments. In Rails 5 the default value will be unified to `:debug` across all environments. To preserve the current setting, add the following line to your `production.rb`:
+[36m2016-08-04T18:09:09.321511+00:00 app[web.1]:[39m 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:160:in `start'
+[36m2016-08-04T18:09:09.321509+00:00 app[web.1]:[39m 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:170:in `block in start'
+[36m2016-08-04T18:09:09.321494+00:00 app[web.1]:[39m [2016-08-04 18:09:09] FATAL SignalException: SIGTERM
+[36m2016-08-04T18:09:09.321508+00:00 app[web.1]:[39m 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:170:in `select'
+[36m2016-08-04T18:09:09.321512+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/rack-1.6.4/lib/rack/server.rb:286:in `start'
+[36m2016-08-04T18:09:09.321516+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.3/lib/rails/commands.rb:17:in `<top (required)>'
+[36m2016-08-04T18:09:09.321515+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.3/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+[36m2016-08-04T18:09:09.321515+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.3/lib/rails/commands/commands_tasks.rb:75:in `server'
+[36m2016-08-04T18:09:09.321513+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.3/lib/rails/commands/commands_tasks.rb:80:in `block in server'
+[36m2016-08-04T18:09:09.321514+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.3/lib/rails/commands/commands_tasks.rb:75:in `tap'
+[36m2016-08-04T18:09:09.321511+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/rack-1.6.4/lib/rack/handler/webrick.rb:34:in `run'
+[36m2016-08-04T18:09:09.321517+00:00 app[web.1]:[39m 	bin/rails:4:in `require'
+[36m2016-08-04T18:09:09.321518+00:00 app[web.1]:[39m 	bin/rails:4:in `<main>'
+[36m2016-08-04T18:09:09.321790+00:00 app[web.1]:[39m [2016-08-04 18:09:09] INFO  going to shutdown ...
+[36m2016-08-04T18:09:09.321513+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.3/lib/rails/commands/server.rb:80:in `start'
+[36m2016-08-04T18:09:09.321510+00:00 app[web.1]:[39m 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:32:in `start'
+[36m2016-08-04T18:09:09.389318+00:00 app[web.1]:[39m => Run `rails server -h` for more startup options
+[36m2016-08-04T18:09:09.321847+00:00 app[web.1]:[39m [2016-08-04 18:09:09] INFO  WEBrick::HTTPServer#start done.
+[36m2016-08-04T18:09:09.389314+00:00 app[web.1]:[39m => Booting WEBrick
+[36m2016-08-04T18:09:09.389317+00:00 app[web.1]:[39m => Rails 4.2.3 application starting in production on http://0.0.0.0:14460
+[36m2016-08-04T18:09:09.389320+00:00 app[web.1]:[39m Exiting
+[36m2016-08-04T18:09:09.389319+00:00 app[web.1]:[39m => Ctrl-C to shutdown server
+[36m2016-08-04T18:09:09.351226+00:00 app[web.1]:[39m [2016-08-04 18:09:09] INFO  WEBrick::HTTPServer#start: pid=3 port=56339
+[36m2016-08-04T18:09:09.521821+00:00 heroku[web.1]:[39m Process exited with status 143
+[36m2016-08-04T18:09:09.350927+00:00 app[web.1]:[39m [2016-08-04 18:09:09] INFO  ruby 2.0.0 (2015-12-16) [x86_64-linux]
+[36m2016-08-04T18:09:09.350907+00:00 app[web.1]:[39m [2016-08-04 18:09:09] INFO  WEBrick 1.3.1
+[36m2016-08-04T18:09:09.477176+00:00 heroku[web.1]:[39m State changed from starting to up
+[32m2016-08-04T18:09:28.399804+00:00 heroku[router]:[39m at=info method=GET path="/javascripts/defaults.js" host=ticketz.herokuapp.com request_id=d3d50a78-e1c6-458e-a6d6-cbbc1b70216e fwd="91.115.72.34" dyno=web.1 connect=1ms service=41ms status=404 bytes=24086
+[32m2016-08-04T18:09:27.957762+00:00 heroku[router]:[39m at=info method=GET path="/" host=ticketz.herokuapp.com request_id=9c28334d-462d-4ede-b226-1783efa2426f fwd="91.115.72.34" dyno=web.1 connect=1ms service=299ms status=200 bytes=1338
+[32m2016-08-04T18:09:28.209357+00:00 heroku[router]:[39m at=info method=GET path="/stylesheets/all.css" host=ticketz.herokuapp.com request_id=aec3f0c5-f1b3-408c-bd10-14e750ef0e3e fwd="91.115.72.34" dyno=web.1 connect=2ms service=107ms status=404 bytes=24097
+[32m2016-08-04T18:09:35.631503+00:00 heroku[router]:[39m at=info method=GET path="/facebooks/new?utf8=%E2%9C%93&event_url=https%3A%2F%2Fwww.facebook.com%2Fevents%2F1482424362052376&email=michael%40mittermayr.com&commit=Subscribe" host=ticketz.herokuapp.com request_id=a914ddfa-a39e-4282-82e1-c7af457c2d9e fwd="91.115.72.34" dyno=web.1 connect=1ms service=15ms status=200 bytes=878
+[32m2016-08-04T18:09:35.858058+00:00 heroku[router]:[39m at=info method=GET path="/stylesheets/all.css" host=ticketz.herokuapp.com request_id=42e4c474-337e-4143-abf6-bfe18910fc0c fwd="91.115.72.34" dyno=web.1 connect=1ms service=40ms status=404 bytes=24095
+[32m2016-08-04T18:09:36.479679+00:00 heroku[router]:[39m at=info method=GET path="/javascripts/defaults.js" host=ticketz.herokuapp.com request_id=be8f17a5-dc18-4fbc-9456-f257bb9c2d6a fwd="91.115.72.34" dyno=web.1 connect=1ms service=355ms status=404 bytes=24086
+[32m2016-08-04T18:10:36.050554+00:00 heroku[router]:[39m at=info method=GET path="/javascripts/defaults.js" host=ticketz.herokuapp.com request_id=522697f2-a1fe-4b28-8295-2f4a78bbf5c6 fwd="91.115.72.34" dyno=web.1 connect=1ms service=36ms status=404 bytes=24086
+[32m2016-08-04T18:10:39.017107+00:00 heroku[router]:[39m at=info method=GET path="/facebooks/new?utf8=%E2%9C%93&event_url=https%3A%2F%2Fwww.facebook.com%2Fevents%2F1482424362052376&email=michael%40mittermayr.com&commit=Subscribe" host=ticketz.herokuapp.com request_id=6939f622-087f-4f78-a98c-8828d821a661 fwd="91.115.72.34" dyno=web.1 connect=1ms service=11ms status=200 bytes=878
+[32m2016-08-04T18:10:39.198607+00:00 heroku[router]:[39m at=info method=GET path="/stylesheets/all.css" host=ticketz.herokuapp.com request_id=7852be82-4245-4867-8139-9ce8ecc987f6 fwd="91.115.72.34" dyno=web.1 connect=2ms service=38ms status=404 bytes=24099
+[32m2016-08-04T18:10:39.485370+00:00 heroku[router]:[39m at=info method=GET path="/javascripts/defaults.js" host=ticketz.herokuapp.com request_id=bd9e5fa7-7d4c-4f03-a1f9-ae0d50f04ec9 fwd="91.115.72.34" dyno=web.1 connect=1ms service=66ms status=404 bytes=24084
+^C[?25h]0;lemmy@lemmy: ~/projects/yemek_koala-masterlemmy@lemmy:~/projects/yemek_koala-master$ rails s
+=> Booting WEBrick
+=> Rails 4.2.3 application starting in development on http://localhost:3000
+=> Run `rails server -h` for more startup options
+=> Ctrl-C to shutdown server
+[2016-08-04 20:11:22] INFO  WEBrick 1.3.1
+[2016-08-04 20:11:22] INFO  ruby 2.2.0 (2014-12-25) [i686-linux]
+[2016-08-04 20:11:22] INFO  WEBrick::HTTPServer#start: pid=4344 port=3000
+DEPRECATION WARNING: You didn't set `secret_key_base`. Read the upgrade documentation to learn more about this new config option. (called from service at /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-04 20:11:25 +0200
+
+PG::ConnectionBad (FATAL:  password authentication failed for user "hopvljxugdirvj"
+FATAL:  password authentication failed for user "hopvljxugdirvj"
+):
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `initialize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `new'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `connect'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:31:in `call'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.8ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (36.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-04 20:12:35 +0200
+
+PG::ConnectionBad (FATAL:  password authentication failed for user "hopvljxugdirvj"
+FATAL:  password authentication failed for user "hopvljxugdirvj"
+):
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `initialize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `new'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `connect'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:31:in `call'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.4ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-04 20:12:38 +0200
+
+PG::ConnectionBad (FATAL:  password authentication failed for user "hopvljxugdirvj"
+FATAL:  password authentication failed for user "hopvljxugdirvj"
+):
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `initialize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `new'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `connect'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:31:in `call'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.9ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (27.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-04 20:12:39 +0200
+
+PG::ConnectionBad (FATAL:  password authentication failed for user "hopvljxugdirvj"
+FATAL:  password authentication failed for user "hopvljxugdirvj"
+):
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `initialize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `new'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `connect'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:31:in `call'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (29.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-04 20:12:39 +0200
+
+PG::ConnectionBad (FATAL:  password authentication failed for user "hopvljxugdirvj"
+FATAL:  password authentication failed for user "hopvljxugdirvj"
+):
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `initialize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `new'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `connect'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:31:in `call'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.9ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (28.2ms)
+^C[2016-08-04 20:12:42] INFO  going to shutdown ...
+[2016-08-04 20:12:42] INFO  WEBrick::HTTPServer#start done.
+Exiting
+]0;lemmy@lemmy: ~/projects/yemek_koala-masterlemmy@lemmy:~/projects/yemek_koala-master$ rails s
+=> Booting WEBrick
+=> Rails 4.2.3 application starting in development on http://localhost:3000
+=> Run `rails server -h` for more startup options
+=> Ctrl-C to shutdown server
+[2016-08-04 20:12:45] INFO  WEBrick 1.3.1
+[2016-08-04 20:12:45] INFO  ruby 2.2.0 (2014-12-25) [i686-linux]
+[2016-08-04 20:12:45] INFO  WEBrick::HTTPServer#start: pid=4374 port=3000
+DEPRECATION WARNING: You didn't set `secret_key_base`. Read the upgrade documentation to learn more about this new config option. (called from service at /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-04 20:12:46 +0200
+
+PG::ConnectionBad (could not translate host name "revdnsltdxwgdf:cuGVyDogrtVR1j-ns3oDjDSsYT@ec2-23-21-164-237.compute-1.amazonaws.com:5432/d8l4aplf7rjuuq" to address: Name or service not known
+):
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `initialize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `new'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `connect'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:31:in `call'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.6ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (31.6ms)
+^C[2016-08-04 20:13:36] INFO  going to shutdown ...
+[2016-08-04 20:13:36] INFO  WEBrick::HTTPServer#start done.
+Exiting
+]0;lemmy@lemmy: ~/projects/yemek_koala-masterlemmy@lemmy:~/projects/yemek_koala-master$ rails s
+=> Booting WEBrick
+=> Rails 4.2.3 application starting in development on http://localhost:3000
+=> Run `rails server -h` for more startup options
+=> Ctrl-C to shutdown server
+[2016-08-04 20:13:40] INFO  WEBrick 1.3.1
+[2016-08-04 20:13:40] INFO  ruby 2.2.0 (2014-12-25) [i686-linux]
+[2016-08-04 20:13:40] INFO  WEBrick::HTTPServer#start: pid=4380 port=3000
+DEPRECATION WARNING: You didn't set `secret_key_base`. Read the upgrade documentation to learn more about this new config option. (called from service at /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-04 20:13:42 +0200
+
+PG::ConnectionBad (FATAL:  password authentication failed for user "hopvljxugdirvj"
+FATAL:  no pg_hba.conf entry for host "91.115.72.34", user "hopvljxugdirvj", database "d9tt6dma8hls4c", SSL off
+):
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `initialize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `new'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `connect'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:31:in `call'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.8ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.4ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (34.3ms)
+^C[2016-08-04 20:13:55] INFO  going to shutdown ...
+[2016-08-04 20:13:55] INFO  WEBrick::HTTPServer#start done.
+Exiting
+]0;lemmy@lemmy: ~/projects/yemek_koala-masterlemmy@lemmy:~/projects/yemek_koala-master$ rails s
+=> Booting WEBrick
+=> Rails 4.2.3 application starting in development on http://localhost:3000
+=> Run `rails server -h` for more startup options
+=> Ctrl-C to shutdown server
+[2016-08-04 20:13:58] INFO  WEBrick 1.3.1
+[2016-08-04 20:13:58] INFO  ruby 2.2.0 (2014-12-25) [i686-linux]
+[2016-08-04 20:13:58] INFO  WEBrick::HTTPServer#start: pid=4394 port=3000
+DEPRECATION WARNING: You didn't set `secret_key_base`. Read the upgrade documentation to learn more about this new config option. (called from service at /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-04 20:14:06 +0200
+
+PG::ConnectionBad (FATAL:  password authentication failed for user "hopvljxugdirvj"
+FATAL:  no pg_hba.conf entry for host "91.115.72.34", user "hopvljxugdirvj", database "d9tt6dma8hls4c", SSL off
+):
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `initialize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `new'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `connect'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:31:in `call'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.6ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (35.4ms)
+^C[2016-08-04 20:17:26] INFO  going to shutdown ...
+[2016-08-04 20:17:26] INFO  WEBrick::HTTPServer#start done.
+Exiting
+]0;lemmy@lemmy: ~/projects/yemek_koala-masterlemmy@lemmy:~/projects/yemek_koala-master$ rake db:migrta[K[Kate
+rake aborted!
+PG::ConnectionBad: could not translate host name "ec2-23-21-164-237.compute-1.amazonaws.com:5432" to address: Name or service not known
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/activerecord-4.2.3/lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `initialize'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/activerecord-4.2.3/lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `new'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/activerecord-4.2.3/lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `connect'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/activerecord-4.2.3/lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/activerecord-4.2.3/lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/activerecord-4.2.3/lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/activerecord-4.2.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/activerecord-4.2.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/activerecord-4.2.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/activerecord-4.2.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/activerecord-4.2.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/activerecord-4.2.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/activerecord-4.2.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/activerecord-4.2.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/activerecord-4.2.3/lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/activerecord-4.2.3/lib/active_record/connection_handling.rb:87:in `connection'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/activerecord-4.2.3/lib/active_record/migration.rb:912:in `initialize'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/activerecord-4.2.3/lib/active_record/migration.rb:819:in `new'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/activerecord-4.2.3/lib/active_record/migration.rb:819:in `up'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/activerecord-4.2.3/lib/active_record/migration.rb:797:in `migrate'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/activerecord-4.2.3/lib/active_record/tasks/database_tasks.rb:137:in `migrate'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/activerecord-4.2.3/lib/active_record/railties/databases.rake:44:in `block (2 levels) in <top (required)>'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/rake-11.2.2/exe/rake:27:in `<top (required)>'
+/home/lemmy/.rvm/gems/ruby-2.2.0/bin/ruby_executable_hooks:15:in `eval'
+/home/lemmy/.rvm/gems/ruby-2.2.0/bin/ruby_executable_hooks:15:in `<main>'
+Tasks: TOP => db:migrate
+(See full trace by running task with --trace)
+]0;lemmy@lemmy: ~/projects/yemek_koala-masterlemmy@lemmy:~/projects/yemek_koala-master$ rake db:migrate[8Pils s
+=> Booting WEBrick
+=> Rails 4.2.3 application starting in development on http://localhost:3000
+=> Run `rails server -h` for more startup options
+=> Ctrl-C to shutdown server
+[2016-08-04 20:18:05] INFO  WEBrick 1.3.1
+[2016-08-04 20:18:05] INFO  ruby 2.2.0 (2014-12-25) [i686-linux]
+[2016-08-04 20:18:05] INFO  WEBrick::HTTPServer#start: pid=4409 port=3000
+DEPRECATION WARNING: You didn't set `secret_key_base`. Read the upgrade documentation to learn more about this new config option. (called from service at /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-04 20:18:08 +0200
+
+PG::ConnectionBad (FATAL:  password authentication failed for user "hopvljxugdirvj"
+FATAL:  password authentication failed for user "hopvljxugdirvj"
+):
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `initialize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `new'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `connect'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:31:in `call'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.8ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (33.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-04 20:18:10 +0200
+
+PG::ConnectionBad (FATAL:  password authentication failed for user "hopvljxugdirvj"
+FATAL:  password authentication failed for user "hopvljxugdirvj"
+):
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `initialize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `new'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `connect'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:31:in `call'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-04 20:18:22 +0200
+
+PG::ConnectionBad (FATAL:  password authentication failed for user "hopvljxugdirvj"
+FATAL:  password authentication failed for user "hopvljxugdirvj"
+):
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `initialize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `new'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `connect'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:31:in `call'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.3ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-04 20:18:23 +0200
+
+PG::ConnectionBad (FATAL:  password authentication failed for user "hopvljxugdirvj"
+FATAL:  password authentication failed for user "hopvljxugdirvj"
+):
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `initialize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `new'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `connect'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:31:in `call'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.3ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (27.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-04 20:18:24 +0200
+
+PG::ConnectionBad (FATAL:  password authentication failed for user "hopvljxugdirvj"
+FATAL:  password authentication failed for user "hopvljxugdirvj"
+):
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `initialize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `new'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `connect'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:31:in `call'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.8ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.3ms)
+^C[2016-08-04 20:18:25] INFO  going to shutdown ...
+[2016-08-04 20:18:26] INFO  WEBrick::HTTPServer#start done.
+Exiting
+^[[A]0;lemmy@lemmy: ~/projects/yemek_koala-masterlemmy@lemmy:~/projects/yemek_koala-master$ rails s
+=> Booting WEBrick
+=> Rails 4.2.3 application starting in development on http://localhost:3000
+=> Run `rails server -h` for more startup options
+=> Ctrl-C to shutdown server
+[2016-08-04 20:18:29] INFO  WEBrick 1.3.1
+[2016-08-04 20:18:29] INFO  ruby 2.2.0 (2014-12-25) [i686-linux]
+[2016-08-04 20:18:29] INFO  WEBrick::HTTPServer#start: pid=4434 port=3000
+DEPRECATION WARNING: You didn't set `secret_key_base`. Read the upgrade documentation to learn more about this new config option. (called from service at /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-04 20:18:30 +0200
+
+ActiveRecord::AdapterNotSpecified ('development' database is not configured. Available: []):
+  activerecord (4.2.3) lib/active_record/connection_adapters/connection_specification.rb:248:in `resolve_symbol_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/connection_specification.rb:211:in `resolve_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/connection_specification.rb:139:in `resolve'
+  activerecord (4.2.3) lib/active_record/connection_adapters/connection_specification.rb:169:in `spec'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:50:in `establish_connection'
+  activerecord (4.2.3) lib/active_record/railtie.rb:120:in `block (2 levels) in <class:Railtie>'
+  activesupport (4.2.3) lib/active_support/lazy_load_hooks.rb:38:in `instance_eval'
+  activesupport (4.2.3) lib/active_support/lazy_load_hooks.rb:38:in `execute_hook'
+  activesupport (4.2.3) lib/active_support/lazy_load_hooks.rb:45:in `block in run_load_hooks'
+  activesupport (4.2.3) lib/active_support/lazy_load_hooks.rb:44:in `each'
+  activesupport (4.2.3) lib/active_support/lazy_load_hooks.rb:44:in `run_load_hooks'
+  activerecord (4.2.3) lib/active_record/base.rb:315:in `<module:ActiveRecord>'
+  activerecord (4.2.3) lib/active_record/base.rb:26:in `<top (required)>'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:660:in `rescue in call'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:651:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.9ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (32.4ms)
+^C[2016-08-04 20:21:31] INFO  going to shutdown ...
+[2016-08-04 20:21:31] INFO  WEBrick::HTTPServer#start done.
+Exiting
+]0;lemmy@lemmy: ~/projects/yemek_koala-masterlemmy@lemmy:~/projects/yemek_koala-master$ rails ske db:migrate[8Pils s
+=> Booting WEBrick
+=> Rails 4.2.3 application starting in development on http://localhost:3000
+=> Run `rails server -h` for more startup options
+=> Ctrl-C to shutdown server
+[2016-08-04 20:21:35] INFO  WEBrick 1.3.1
+[2016-08-04 20:21:35] INFO  ruby 2.2.0 (2014-12-25) [i686-linux]
+[2016-08-04 20:21:35] INFO  WEBrick::HTTPServer#start: pid=4443 port=3000
+DEPRECATION WARNING: You didn't set `secret_key_base`. Read the upgrade documentation to learn more about this new config option. (called from service at /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-04 20:21:38 +0200
+
+PG::ConnectionBad (FATAL:  password authentication failed for user "hopvljxugdirvj"
+):
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `initialize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `new'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `connect'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:31:in `call'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.0ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (25.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-04 20:21:40 +0200
+
+PG::ConnectionBad (FATAL:  password authentication failed for user "hopvljxugdirvj"
+):
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `initialize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `new'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `connect'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:31:in `call'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.3ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (27.0ms)
+^C[2016-08-04 20:22:20] INFO  going to shutdown ...
+[2016-08-04 20:22:20] INFO  WEBrick::HTTPServer#start done.
+Exiting
+]0;lemmy@lemmy: ~/projects/yemek_koala-masterlemmy@lemmy:~/projects/yemek_koala-master$ rails s
+=> Booting WEBrick
+=> Rails 4.2.3 application starting in development on http://localhost:3000
+=> Run `rails server -h` for more startup options
+=> Ctrl-C to shutdown server
+[2016-08-04 20:22:23] INFO  WEBrick 1.3.1
+[2016-08-04 20:22:23] INFO  ruby 2.2.0 (2014-12-25) [i686-linux]
+[2016-08-04 20:22:23] INFO  WEBrick::HTTPServer#start: pid=4453 port=3000
+DEPRECATION WARNING: You didn't set `secret_key_base`. Read the upgrade documentation to learn more about this new config option. (called from service at /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-04 20:22:25 +0200
+
+PG::ConnectionBad (could not translate host name "ec2-23-21-164-237.compute-1.amazonaws.com:5432" to address: Name or service not known
+):
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `initialize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `new'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `connect'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:31:in `call'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.2ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (33.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-04 20:22:26 +0200
+
+PG::ConnectionBad (could not translate host name "ec2-23-21-164-237.compute-1.amazonaws.com:5432" to address: Name or service not known
+):
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `initialize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `new'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `connect'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:31:in `call'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.8ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.1ms)
+^C[2016-08-04 20:22:47] INFO  going to shutdown ...
+^[[A[2016-08-04 20:22:48] INFO  WEBrick::HTTPServer#start done.
+Exiting
+]0;lemmy@lemmy: ~/projects/yemek_koala-masterlemmy@lemmy:~/projects/yemek_koala-master$ rails s
+=> Booting WEBrick
+=> Rails 4.2.3 application starting in development on http://localhost:3000
+=> Run `rails server -h` for more startup options
+=> Ctrl-C to shutdown server
+[2016-08-04 20:22:51] INFO  WEBrick 1.3.1
+[2016-08-04 20:22:51] INFO  ruby 2.2.0 (2014-12-25) [i686-linux]
+[2016-08-04 20:22:51] INFO  WEBrick::HTTPServer#start: pid=4459 port=3000
+DEPRECATION WARNING: You didn't set `secret_key_base`. Read the upgrade documentation to learn more about this new config option. (called from service at /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-04 20:23:10 +0200
+Processing by FacebooksController#menu as HTML
+  Rendered facebooks/menu.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 223ms (Views: 219.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/all.css" for 127.0.0.1 at 2016-08-04 20:23:12 +0200
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/all.css"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.6ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (15.0ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (79.3ms)
+
+
+Started GET "/javascripts/defaults.js" for 127.0.0.1 at 2016-08-04 20:23:12 +0200
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/defaults.js"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.3ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (64.0ms)
+
+
+Started GET "/facebooks/new?utf8=%E2%9C%93&event_url=https%3A%2F%2Fwww.facebook.com%2Fevents%2F1482424362052376%2F&email=michael%40mittermayr.com&commit=Subscribe" for 127.0.0.1 at 2016-08-04 20:23:18 +0200
+Processing by FacebooksController#new as HTML
+  Parameters: {"utf8"=>"✓", "event_url"=>"https://www.facebook.com/events/1482424362052376/", "email"=>"michael@mittermayr.com", "commit"=>"Subscribe"}
+Job is starting!*****************************
+  Rendered facebooks/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 37ms (Views: 33.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/all.css" for 127.0.0.1 at 2016-08-04 20:23:18 +0200
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/all.css"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+Job is running!*****************************
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (78.7ms)
+
+
+Started GET "/javascripts/defaults.js" for 127.0.0.1 at 2016-08-04 20:23:18 +0200
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/defaults.js"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (66.5ms)
+
+ActionMailer::Base#mail: processed outbound mail in 181.4ms
+
+Sent mail to michael@mittermayr.com (691.2ms)
+Date: Thu, 04 Aug 2016 20:23:19 +0200
+From: kaisercoins@gmail.com
+To: michael@mittermayr.com
+Message-ID: <57a3881710b7_116b5e1855236427@lemmy.mail>
+Subject: Ticket ALERT!
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<br>31% - <a href=3D'http://www.facebook.com/1482424362052376_15814062621=
+54185'>Hab an Frequency Festival Pass zu verkaufen.
+Bei Interesse, bitte PN. :)</a><br>51% - <a href=3D'http://www.facebook.c=
+om/1482424362052376_1581153998846078'>FM4 Frequency - 3 Tages Festivalpas=
+s um =E2=82=AC 130 abzugeben. Bei Interesse bitte PN!</a>=
+
+Sucker Punch job error for class: 'EventListener' args: ["1482424362052376", "michael@mittermayr.com"]
+Net::SMTPAuthenticationError 535 Authentication failed: account disabled
+
+/home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/net/smtp.rb:976:in `check_auth_response'
+/home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/net/smtp.rb:740:in `auth_plain'
+/home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/net/smtp.rb:732:in `authenticate'
+/home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/net/smtp.rb:567:in `do_start'
+/home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/net/smtp.rb:520:in `start'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/mail-2.6.4/lib/mail/network/delivery_methods/smtp.rb:113:in `deliver!'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/mail-2.6.4/lib/mail/message.rb:2149:in `do_delivery'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/mail-2.6.4/lib/mail/message.rb:237:in `block in deliver'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionmailer-4.2.3/lib/action_mailer/base.rb:543:in `block in deliver_mail'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/activesupport-4.2.3/lib/active_support/notifications.rb:164:in `block in instrument'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/activesupport-4.2.3/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/activesupport-4.2.3/lib/active_support/notifications.rb:164:in `instrument'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionmailer-4.2.3/lib/action_mailer/base.rb:541:in `deliver_mail'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/mail-2.6.4/lib/mail/message.rb:237:in `deliver'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionmailer-4.2.3/lib/action_mailer/message_delivery.rb:85:in `deliver_now'
+/home/lemmy/projects/yemek_koala-master/app/workers/event_listener.rb:38:in `perform'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/sucker_punch-2.0.2/lib/sucker_punch/job.rb:54:in `__run_perform'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/sucker_punch-2.0.2/lib/sucker_punch/job.rb:36:in `block in perform_async'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/concurrent-ruby-1.0.2/lib/concurrent/executor/ruby_thread_pool_executor.rb:348:in `call'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/concurrent-ruby-1.0.2/lib/concurrent/executor/ruby_thread_pool_executor.rb:348:in `run_task'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/concurrent-ruby-1.0.2/lib/concurrent/executor/ruby_thread_pool_executor.rb:337:in `block (3 levels) in create_worker'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/concurrent-ruby-1.0.2/lib/concurrent/executor/ruby_thread_pool_executor.rb:320:in `loop'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/concurrent-ruby-1.0.2/lib/concurrent/executor/ruby_thread_pool_executor.rb:320:in `block (2 levels) in create_worker'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/concurrent-ruby-1.0.2/lib/concurrent/executor/ruby_thread_pool_executor.rb:319:in `catch'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/concurrent-ruby-1.0.2/lib/concurrent/executor/ruby_thread_pool_executor.rb:319:in `block in create_worker'
+^C[2016-08-04 20:25:06] INFO  going to shutdown ...
+[2016-08-04 20:25:06] INFO  WEBrick::HTTPServer#start done.
+Exiting
+]0;lemmy@lemmy: ~/projects/yemek_koala-masterlemmy@lemmy:~/projects/yemek_koala-master$ rails s
+=> Booting WEBrick
+=> Rails 4.2.3 application starting in development on http://localhost:3000
+=> Run `rails server -h` for more startup options
+=> Ctrl-C to shutdown server
+[2016-08-04 20:25:10] INFO  WEBrick 1.3.1
+[2016-08-04 20:25:10] INFO  ruby 2.2.0 (2014-12-25) [i686-linux]
+[2016-08-04 20:25:10] INFO  WEBrick::HTTPServer#start: pid=4472 port=3000
+DEPRECATION WARNING: You didn't set `secret_key_base`. Read the upgrade documentation to learn more about this new config option. (called from service at /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138)
+
+
+Started GET "/facebooks/new?utf8=%E2%9C%93&event_url=https%3A%2F%2Fwww.facebook.com%2Fevents%2F1482424362052376%2F&email=michael%40mittermayr.com&commit=Subscribe" for 127.0.0.1 at 2016-08-04 20:25:35 +0200
+Processing by FacebooksController#new as HTML
+  Parameters: {"utf8"=>"✓", "event_url"=>"https://www.facebook.com/events/1482424362052376/", "email"=>"michael@mittermayr.com", "commit"=>"Subscribe"}
+Job is starting!*****************************
+  Rendered facebooks/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 212ms (Views: 208.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/all.css" for 127.0.0.1 at 2016-08-04 20:25:38 +0200
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/all.css"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+Job is running!*****************************
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (13.3ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (42.6ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (187.2ms)
+
+
+Started GET "/javascripts/defaults.js" for 127.0.0.1 at 2016-08-04 20:25:38 +0200
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/defaults.js"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (95.6ms)
+
+ActionMailer::Base#mail: processed outbound mail in 274.3ms
+
+Sent mail to michael@mittermayr.com (513.8ms)
+Date: Thu, 04 Aug 2016 20:25:39 +0200
+From: kaisercoins@gmail.com
+To: michael@mittermayr.com
+Message-ID: <57a388a348ea2_11784f478204501c@lemmy.mail>
+Subject: Ticket ALERT!
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<br>35% - <a href=3D'http://www.facebook.com/1482424362052376_15814062621=
+54185'>Hab an Frequency Festival Pass zu verkaufen.
+Bei Interesse, bitte PN. :)</a><br>69% - <a href=3D'http://www.facebook.c=
+om/1482424362052376_1581153998846078'>FM4 Frequency - 3 Tages Festivalpas=
+s um =E2=82=AC 130 abzugeben. Bei Interesse bitte PN!</a>=
+
+Sucker Punch job error for class: 'EventListener' args: ["1482424362052376", "michael@mittermayr.com"]
+Net::SMTPFatalError 550 Unauthenticated senders not allowed
+
+/home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/net/smtp.rb:964:in `check_response'
+/home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/net/smtp.rb:933:in `getok'
+/home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/net/smtp.rb:841:in `mailfrom'
+/home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/net/smtp.rb:662:in `send_message'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/mail-2.6.4/lib/mail/network/delivery_methods/smtp.rb:114:in `block in deliver!'
+/home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/net/smtp.rb:521:in `start'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/mail-2.6.4/lib/mail/network/delivery_methods/smtp.rb:113:in `deliver!'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/mail-2.6.4/lib/mail/message.rb:2149:in `do_delivery'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/mail-2.6.4/lib/mail/message.rb:237:in `block in deliver'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionmailer-4.2.3/lib/action_mailer/base.rb:543:in `block in deliver_mail'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/activesupport-4.2.3/lib/active_support/notifications.rb:164:in `block in instrument'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/activesupport-4.2.3/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/activesupport-4.2.3/lib/active_support/notifications.rb:164:in `instrument'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionmailer-4.2.3/lib/action_mailer/base.rb:541:in `deliver_mail'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/mail-2.6.4/lib/mail/message.rb:237:in `deliver'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionmailer-4.2.3/lib/action_mailer/message_delivery.rb:85:in `deliver_now'
+/home/lemmy/projects/yemek_koala-master/app/workers/event_listener.rb:38:in `perform'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/sucker_punch-2.0.2/lib/sucker_punch/job.rb:54:in `__run_perform'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/sucker_punch-2.0.2/lib/sucker_punch/job.rb:36:in `block in perform_async'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/concurrent-ruby-1.0.2/lib/concurrent/executor/ruby_thread_pool_executor.rb:348:in `call'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/concurrent-ruby-1.0.2/lib/concurrent/executor/ruby_thread_pool_executor.rb:348:in `run_task'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/concurrent-ruby-1.0.2/lib/concurrent/executor/ruby_thread_pool_executor.rb:337:in `block (3 levels) in create_worker'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/concurrent-ruby-1.0.2/lib/concurrent/executor/ruby_thread_pool_executor.rb:320:in `loop'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/concurrent-ruby-1.0.2/lib/concurrent/executor/ruby_thread_pool_executor.rb:320:in `block (2 levels) in create_worker'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/concurrent-ruby-1.0.2/lib/concurrent/executor/ruby_thread_pool_executor.rb:319:in `catch'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/concurrent-ruby-1.0.2/lib/concurrent/executor/ruby_thread_pool_executor.rb:319:in `block in create_worker'
+^C[2016-08-04 20:29:26] INFO  going to shutdown ...
+[2016-08-04 20:29:26] INFO  WEBrick::HTTPServer#start done.
+Exiting
+]0;lemmy@lemmy: ~/projects/yemek_koala-masterlemmy@lemmy:~/projects/yemek_koala-master$ rails s
+=> Booting WEBrick
+=> Rails 4.2.3 application starting in development on http://localhost:3000
+=> Run `rails server -h` for more startup options
+=> Ctrl-C to shutdown server
+[2016-08-04 20:29:29] INFO  WEBrick 1.3.1
+[2016-08-04 20:29:29] INFO  ruby 2.2.0 (2014-12-25) [i686-linux]
+[2016-08-04 20:29:29] INFO  WEBrick::HTTPServer#start: pid=4487 port=3000
+DEPRECATION WARNING: You didn't set `secret_key_base`. Read the upgrade documentation to learn more about this new config option. (called from service at /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138)
+
+
+Started GET "/facebooks/new?utf8=%E2%9C%93&event_url=https%3A%2F%2Fwww.facebook.com%2Fevents%2F1482424362052376%2F&email=michael%40mittermayr.com&commit=Subscribe" for 127.0.0.1 at 2016-08-04 20:29:33 +0200
+Processing by FacebooksController#new as HTML
+  Parameters: {"utf8"=>"✓", "event_url"=>"https://www.facebook.com/events/1482424362052376/", "email"=>"michael@mittermayr.com", "commit"=>"Subscribe"}
+Job is starting!*****************************
+  Rendered facebooks/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 275ms (Views: 269.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/all.css" for 127.0.0.1 at 2016-08-04 20:29:35 +0200
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/all.css"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+Job is running!*****************************
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.7ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (17.8ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (88.2ms)
+
+
+Started GET "/javascripts/defaults.js" for 127.0.0.1 at 2016-08-04 20:29:35 +0200
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/defaults.js"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.4ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (10.4ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (96.8ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (218.3ms)
+
+ActionMailer::Base#mail: processed outbound mail in 443.4ms
+
+Sent mail to michael@mittermayr.com (615.8ms)
+Date: Thu, 04 Aug 2016 20:29:36 +0200
+From: kaisercoins@gmail.com
+To: michael@mittermayr.com
+Message-ID: <57a389907c12f_11874cb268c6386@lemmy.mail>
+Subject: Ticket ALERT!
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<br>28% - <a href=3D'http://www.facebook.com/1482424362052376_15814062621=
+54185'>Hab an Frequency Festival Pass zu verkaufen.
+Bei Interesse, bitte PN. :)</a><br>27% - <a href=3D'http://www.facebook.c=
+om/1482424362052376_1581153998846078'>FM4 Frequency - 3 Tages Festivalpas=
+s um =E2=82=AC 130 abzugeben. Bei Interesse bitte PN!</a>=
+
+Sucker Punch job error for class: 'EventListener' args: ["1482424362052376", "michael@mittermayr.com"]
+Net::SMTPAuthenticationError 535 Authentication failed: Bad username / password
+
+/home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/net/smtp.rb:976:in `check_auth_response'
+/home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/net/smtp.rb:740:in `auth_plain'
+/home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/net/smtp.rb:732:in `authenticate'
+/home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/net/smtp.rb:567:in `do_start'
+/home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/net/smtp.rb:520:in `start'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/mail-2.6.4/lib/mail/network/delivery_methods/smtp.rb:113:in `deliver!'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/mail-2.6.4/lib/mail/message.rb:2149:in `do_delivery'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/mail-2.6.4/lib/mail/message.rb:237:in `block in deliver'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionmailer-4.2.3/lib/action_mailer/base.rb:543:in `block in deliver_mail'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/activesupport-4.2.3/lib/active_support/notifications.rb:164:in `block in instrument'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/activesupport-4.2.3/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/activesupport-4.2.3/lib/active_support/notifications.rb:164:in `instrument'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionmailer-4.2.3/lib/action_mailer/base.rb:541:in `deliver_mail'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/mail-2.6.4/lib/mail/message.rb:237:in `deliver'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionmailer-4.2.3/lib/action_mailer/message_delivery.rb:85:in `deliver_now'
+/home/lemmy/projects/yemek_koala-master/app/workers/event_listener.rb:38:in `perform'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/sucker_punch-2.0.2/lib/sucker_punch/job.rb:54:in `__run_perform'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/sucker_punch-2.0.2/lib/sucker_punch/job.rb:36:in `block in perform_async'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/concurrent-ruby-1.0.2/lib/concurrent/executor/ruby_thread_pool_executor.rb:348:in `call'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/concurrent-ruby-1.0.2/lib/concurrent/executor/ruby_thread_pool_executor.rb:348:in `run_task'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/concurrent-ruby-1.0.2/lib/concurrent/executor/ruby_thread_pool_executor.rb:337:in `block (3 levels) in create_worker'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/concurrent-ruby-1.0.2/lib/concurrent/executor/ruby_thread_pool_executor.rb:320:in `loop'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/concurrent-ruby-1.0.2/lib/concurrent/executor/ruby_thread_pool_executor.rb:320:in `block (2 levels) in create_worker'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/concurrent-ruby-1.0.2/lib/concurrent/executor/ruby_thread_pool_executor.rb:319:in `catch'
+/home/lemmy/.rvm/gems/ruby-2.2.0/gems/concurrent-ruby-1.0.2/lib/concurrent/executor/ruby_thread_pool_executor.rb:319:in `block in create_worker'
+^C[2016-08-04 20:35:00] INFO  going to shutdown ...
+[2016-08-04 20:35:00] INFO  WEBrick::HTTPServer#start done.
+Exiting
+]0;lemmy@lemmy: ~/projects/yemek_koala-masterlemmy@lemmy:~/projects/yemek_koala-master$ rails s
+=> Booting WEBrick
+=> Rails 4.2.3 application starting in development on http://localhost:3000
+=> Run `rails server -h` for more startup options
+=> Ctrl-C to shutdown server
+[2016-08-04 20:35:04] INFO  WEBrick 1.3.1
+[2016-08-04 20:35:04] INFO  ruby 2.2.0 (2014-12-25) [i686-linux]
+[2016-08-04 20:35:04] INFO  WEBrick::HTTPServer#start: pid=4504 port=3000
+DEPRECATION WARNING: You didn't set `secret_key_base`. Read the upgrade documentation to learn more about this new config option. (called from service at /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138)
+
+
+Started GET "/facebooks/new?utf8=%E2%9C%93&event_url=https%3A%2F%2Fwww.facebook.com%2Fevents%2F1482424362052376%2F&email=michael%40mittermayr.com&commit=Subscribe" for 127.0.0.1 at 2016-08-04 20:35:10 +0200
+Processing by FacebooksController#new as HTML
+  Parameters: {"utf8"=>"✓", "event_url"=>"https://www.facebook.com/events/1482424362052376/", "email"=>"michael@mittermayr.com", "commit"=>"Subscribe"}
+Job is starting!*****************************
+  Rendered facebooks/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 224ms (Views: 211.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/all.css" for 127.0.0.1 at 2016-08-04 20:35:12 +0200
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/all.css"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/lemmy/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+Job is running!*****************************
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.3ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (17.1ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.9ms)
+  Rendered /home/lemmy/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (99.7ms)
+
+
+Started GET "/javascripts/defaults.js" for 127.0.0.1 at 2016-08-04 20:35:12 +0200
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/defaults.js"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in 
