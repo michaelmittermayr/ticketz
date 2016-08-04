@@ -2,6 +2,7 @@
 #   gem install sqlite3
 development:
   adapter: postgresql
+  host: localhost
   database: d9tt6dma8hls4c
   username: hopvljxugdirvj
   password: fEVmVb1r_upLFZ173qcdYIjuyF
@@ -13,6 +14,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   adapter: postgresql
+  host: localhost
   database: d9tt6dma8hls4c
   username: hopvljxugdirvj
   password: fEVmVb1r_upLFZ173qcdYIjuyF
@@ -21,6 +23,7 @@ test:
 
 production:
   adapter: postgresql
+  host: localhost
   database: d9tt6dma8hls4c
   username: hopvljxugdirvj
   password: fEVmVb1r_upLFZ173qcdYIjuyF
