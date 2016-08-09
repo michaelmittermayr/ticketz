@@ -3236,4 +3236,284 @@ To https://git.heroku.com/ticketz.git
 [35m2016-08-04T18:39:43.756167+00:00 heroku[router]:[39m at=info method=GET path="/stylesheets/all.css" host=ticketz.herokuapp.com request_id=b0c66c8d-d7d5-48ac-ae3a-40cfe1e7ac5d fwd="91.115.72.34" dyno=web.1 connect=0ms service=122ms status=404 bytes=24099
 [35m2016-08-04T18:39:45.969256+00:00 heroku[router]:[39m at=info method=GET path="/facebooks/new?utf8=%E2%9C%93&event_url=https%3A%2F%2Fwww.facebook.com%2Fevents%2F1482424362052376&email=michael%40mittermayr.com&commit=Subscribe" host=ticketz.herokuapp.com request_id=3b42eca4-be4e-4de8-ba5e-c82b1ed1a662 fwd="91.115.72.34" dyno=web.1 connect=0ms service=279ms status=200 bytes=878
 [35m2016-08-04T18:39:46.152238+00:00 heroku[router]:[39m at=info method=GET path="/stylesheets/all.css" host=ticketz.herokuapp.com request_id=b2596a36-4f5c-47f8-b047-09fb74baff89 fwd="91.115.72.34" dyno=web.1 connect=0ms service=40ms status=404 bytes=24097
-[35m2016-08-04T18:39:46.519793+00:00 heroku[router]:[39m at=info method=GET path="/javascripts/defaults.js" host=ticketz.herokuapp.com request_id=
+[35m2016-08-04T18:39:46.519793+00:00 heroku[router]:[39m at=info method=GET path="/javascripts/defaults.js" host=ticketz.herokuapp.com request_id=a4ae34a4-fcf2-4d1e-8f4b-0f94cacb5efe fwd="91.115.72.34" dyno=web.1 connect=0ms service=56ms status=404 bytes=24088
+^C[?25h]0;lemmy@lemmy: ~/projects/yemek_koala-masterlemmy@lemmy:~/projects/yemek_koala-master$ heroku logs -tgit push heroku master[1Pcommit -m ",gkrg"add .[K
+]0;lemmy@lemmy: ~/projects/yemek_koala-masterlemmy@lemmy:~/projects/yemek_koala-master$ git add .heroku logs -tgit push heroku master[1Pcommit -m ",gkrg"
+[master fabf6a4] ,gkrg
+ 2 files changed, 295 insertions(+), 1 deletion(-)
+]0;lemmy@lemmy: ~/projects/yemek_koala-masterlemmy@lemmy:~/projects/yemek_koala-master$ git commit -m ",gkrg"add .[Kheroku logs -tgit push heroku master
+remote: Compressing source files... done.[K
+remote: Building source:[K
+remote: 
+remote: -----> Ruby app detected[K
+remote: -----> Compiling Ruby/Rails[K
+remote: -----> Using Ruby version: ruby-2.0.0[K
+remote: -----> Installing dependencies using bundler 1.11.2[K
+remote:        Running: bundle install --without development:test --path vendor/bundle --binstubs vendor/bundle/bin -j4 --deployment[K
+remote:        Rubygems 2.0.14.1 is not threadsafe, so your gems will be installed one at a time. Upgrade to Rubygems 2.1.0 or higher to enable parallel gem installation.[K
+remote:        Using rake 11.2.2[K
+remote:        Using i18n 0.7.0[K
+remote:        Using json 1.8.3[K
+remote:        Using minitest 5.9.0[K
+remote:        Using thread_safe 0.3.5[K
+remote:        Using builder 3.2.2[K
+remote:        Using erubis 2.7.0[K
+remote:        Using mini_portile2 2.1.0[K
+remote:        Using pkg-config 1.1.7[K
+remote:        Using rack 1.6.4[K
+remote:        Using mime-types-data 3.2016.0521[K
+remote:        Using arel 6.0.3[K
+remote:        Using addressable 2.4.0[K
+remote:        Using coffee-script-source 1.10.0[K
+remote:        Using execjs 2.7.0[K
+remote:        Using thor 0.19.1[K
+remote:        Using concurrent-ruby 1.0.2[K
+remote:        Using connection_pool 2.2.0[K
+remote:        Using multipart-post 2.0.0[K
+remote:        Using multi_json 1.12.1[K
+remote:        Using libv8 3.16.14.15[K
+remote:        Using pg 0.18.4[K
+remote:        Using bundler 1.11.2[K
+remote:        Using redis 3.3.1[K
+remote:        Using ref 2.0.0[K
+remote:        Using sass 3.4.22[K
+remote:        Using tilt 2.0.5[K
+remote:        Using turbolinks-source 5.0.0[K
+remote:        Using rdoc 4.2.2[K
+remote:        Using tzinfo 1.2.2[K
+remote:        Using nokogiri 1.6.8[K
+remote:        Using rack-test 0.6.3[K
+remote:        Using rack-protection 1.5.3[K
+remote:        Using mime-types 3.1[K
+remote:        Using coffee-script 2.4.1[K
+remote:        Using uglifier 3.0.0[K
+remote:        Using sprockets 3.7.0[K
+remote:        Using sucker_punch 2.0.2[K
+remote:        Using faraday 0.9.2[K
+remote:        Using therubyracer 0.12.2[K
+remote:        Using turbolinks 5.0.0[K
+remote:        Using sdoc 0.4.1[K
+remote:        Using activesupport 4.2.3[K
+remote:        Using loofah 2.0.3[K
+remote:        Using sinatra 1.4.7[K
+remote:        Using mail 2.6.4[K
+remote:        Using koala 2.4.0[K
+remote:        Using rails-deprecated_sanitizer 1.0.3[K
+remote:        Using globalid 0.3.7[K
+remote:        Using activemodel 4.2.3[K
+remote:        Using jbuilder 2.6.0[K
+remote:        Using rails-html-sanitizer 1.0.3[K
+remote:        Using sidekiq 4.1.4[K
+remote:        Using rails-dom-testing 1.0.7[K
+remote:        Using activejob 4.2.3[K
+remote:        Using activerecord 4.2.3[K
+remote:        Using actionview 4.2.3[K
+remote:        Using actionpack 4.2.3[K
+remote:        Using actionmailer 4.2.3[K
+remote:        Using railties 4.2.3[K
+remote:        Using sprockets-rails 3.1.1[K
+remote:        Using coffee-rails 4.1.1[K
+remote:        Using jquery-rails 4.1.1[K
+remote:        Using rails 4.2.3[K
+remote:        Using sass-rails 5.0.6[K
+remote:        Bundle complete! 15 Gemfile dependencies, 65 gems now installed.[K
+remote:        Gems in the groups development and test were not installed.[K
+remote:        Bundled gems are installed into ./vendor/bundle.[K
+remote:        Bundle completed (0.39s)[K
+remote:        Cleaning up the bundler cache.[K
+remote: -----> Preparing app for Rails asset pipeline[K
+remote:        Running: rake assets:precompile[K
+remote:        DEPRECATION WARNING: The configuration option `config.serve_static_assets` has been renamed to `config.serve_static_files` to clarify its role (it merely enables serving everything in the `public` folder and is unrelated to the asset pipeline). The `serve_static_assets` alias will be removed in Rails 5.0. Please migrate your configuration files accordingly. (called from block in <top (required)> at /tmp/build_f8aa331e92a4eccde6082a786d0b0a47/yemek_koala-master/config/environments/production.rb:32)[K
+remote:        config.eager_load is set to nil. Please update your config/environments/*.rb files accordingly:[K
+remote:        * development - set it to false[K
+remote:        * test - set it to false (unless you use a tool that preloads your test environment)[K
+remote:        * production - set it to true[K
+remote:        DEPRECATION WARNING: You did not specify a `log_level` in `production.rb`. Currently, the default value for `log_level` is `:info` for the production environment and `:debug` in all other environments. In Rails 5 the default value will be unified to `:debug` across all environments. To preserve the current setting, add the following line to your `production.rb`:[K
+remote:        config.log_level = :info[K
+remote:        . (called from block in tsort_each at /tmp/build_f8aa331e92a4eccde6082a786d0b0a47/yemek_koala-master/vendor/ruby-2.0.0/lib/ruby/2.0.0/tsort.rb:150)[K
+remote:        Asset precompilation completed (1.81s)[K
+remote:        Cleaning assets[K
+remote:        Running: rake assets:clean[K
+remote:        DEPRECATION WARNING: The configuration option `config.serve_static_assets` has been renamed to `config.serve_static_files` to clarify its role (it merely enables serving everything in the `public` folder and is unrelated to the asset pipeline). The `serve_static_assets` alias will be removed in Rails 5.0. Please migrate your configuration files accordingly. (called from block in <top (required)> at /tmp/build_f8aa331e92a4eccde6082a786d0b0a47/yemek_koala-master/config/environments/production.rb:32)[K
+remote:        config.eager_load is set to nil. Please update your config/environments/*.rb files accordingly:[K
+remote:        * development - set it to false[K
+remote:        * test - set it to false (unless you use a tool that preloads your test environment)[K
+remote:        * production - set it to true[K
+remote:        DEPRECATION WARNING: You did not specify a `log_level` in `production.rb`. Currently, the default value for `log_level` is `:info` for the production environment and `:debug` in all other environments. In Rails 5 the default value will be unified to `:debug` across all environments. To preserve the current setting, add the following line to your `production.rb`:[K
+remote:        config.log_level = :info[K
+remote:        . (called from block in tsort_each at /tmp/build_f8aa331e92a4eccde6082a786d0b0a47/yemek_koala-master/vendor/ruby-2.0.0/lib/ruby/2.0.0/tsort.rb:150)[K
+remote: 
+remote: ###### WARNING:[K
+remote:        Include 'rails_12factor' gem to enable all platform features[K
+remote:        See https://devcenter.heroku.com/articles/rails-integration-gems for more information.[K
+remote: 
+remote: ###### WARNING:[K
+remote:        You have not declared a Ruby version in your Gemfile.[K
+remote:        To set your Ruby version add this line to your Gemfile:[K
+remote:        ruby '2.0.0'[K
+remote:        # See https://devcenter.heroku.com/articles/ruby-versions for more information.[K
+remote: 
+remote: ###### WARNING:[K
+remote:        No Procfile detected, using the default web server.[K
+remote:        We recommend explicitly declaring how to boot your server process via a Procfile.[K
+remote:        https://devcenter.heroku.com/articles/ruby-default-web-server[K
+remote: 
+remote: -----> Discovering process types[K
+remote:        Procfile declares types     -> (none)[K
+remote:        Default types for buildpack -> console, rake, web, worker[K
+remote: 
+remote: -----> Compressing...[K
+remote:        Done: 39.2M[K
+remote: -----> Launching...[K
+remote:        Released v123[K
+remote:        https://ticketz.herokuapp.com/ deployed to Heroku[K
+remote: 
+remote: Verifying deploy... done.[K
+To https://git.heroku.com/ticketz.git
+   f3a0536..fabf6a4  master -> master
+]0;lemmy@lemmy: ~/projects/yemek_koala-masterlemmy@lemmy:~/projects/yemek_koala-master$ git push heroku master[1Pcommit -m ",gkrg"add .[Kheroku logs -t
+[36m2016-08-04T18:39:17.817050+00:00 app[web.1]:[39m [2016-08-04 18:39:17] INFO  ruby 2.0.0 (2015-12-16) [x86_64-linux]
+[36m2016-08-04T18:39:17.817050+00:00 app[web.1]:[39m [2016-08-04 18:39:17] INFO  WEBrick::HTTPServer#start: pid=3 port=20825
+[36m2016-08-04T18:39:18.293163+00:00 heroku[web.1]:[39m State changed from starting to up
+[36m2016-08-04T18:39:30.286878+00:00 heroku[web.1]:[39m Restarting
+[36m2016-08-04T18:39:30.287918+00:00 heroku[web.1]:[39m State changed from up to starting
+[36m2016-08-04T18:39:33.864170+00:00 heroku[web.1]:[39m Stopping all processes with SIGTERM
+[36m2016-08-04T18:39:34.569423+00:00 app[web.1]:[39m [2016-08-04 18:39:34] FATAL SignalException: SIGTERM
+[36m2016-08-04T18:39:34.569435+00:00 app[web.1]:[39m 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:170:in `block in start'
+[36m2016-08-04T18:39:34.569434+00:00 app[web.1]:[39m 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:170:in `select'
+[36m2016-08-04T18:39:34.569436+00:00 app[web.1]:[39m 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:32:in `start'
+[36m2016-08-04T18:39:34.569437+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/rack-1.6.4/lib/rack/handler/webrick.rb:34:in `run'
+[36m2016-08-04T18:39:34.569438+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/rack-1.6.4/lib/rack/server.rb:286:in `start'
+[36m2016-08-04T18:39:34.569439+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.3/lib/rails/commands/server.rb:80:in `start'
+[36m2016-08-04T18:39:34.569437+00:00 app[web.1]:[39m 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:160:in `start'
+[36m2016-08-04T18:39:34.569439+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.3/lib/rails/commands/commands_tasks.rb:80:in `block in server'
+[36m2016-08-04T18:39:34.569440+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.3/lib/rails/commands/commands_tasks.rb:75:in `tap'
+[36m2016-08-04T18:39:34.569441+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.3/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+[36m2016-08-04T18:39:34.569440+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.3/lib/rails/commands/commands_tasks.rb:75:in `server'
+[36m2016-08-04T18:39:34.569442+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.3/lib/rails/commands.rb:17:in `<top (required)>'
+[36m2016-08-04T18:39:34.569443+00:00 app[web.1]:[39m 	bin/rails:4:in `require'
+[36m2016-08-04T18:39:34.569443+00:00 app[web.1]:[39m 	bin/rails:4:in `<main>'
+[36m2016-08-04T18:39:34.682160+00:00 heroku[web.1]:[39m Starting process with command `bin/rails server -p 58117 -e $RAILS_ENV`
+[36m2016-08-04T18:39:34.569448+00:00 app[web.1]:[39m [2016-08-04 18:39:34] INFO  going to shutdown ...
+[36m2016-08-04T18:39:34.656080+00:00 app[web.1]:[39m => Rails 4.2.3 application starting in production on http://0.0.0.0:20825
+[36m2016-08-04T18:39:34.656076+00:00 app[web.1]:[39m => Booting WEBrick
+[36m2016-08-04T18:39:34.656081+00:00 app[web.1]:[39m => Run `rails server -h` for more startup options
+[36m2016-08-04T18:39:34.656081+00:00 app[web.1]:[39m => Ctrl-C to shutdown server
+[36m2016-08-04T18:39:34.656082+00:00 app[web.1]:[39m Exiting
+[36m2016-08-04T18:39:34.569519+00:00 app[web.1]:[39m [2016-08-04 18:39:34] INFO  WEBrick::HTTPServer#start done.
+[36m2016-08-04T18:39:34.798280+00:00 heroku[web.1]:[39m Process exited with status 143
+[36m2016-08-04T18:39:38.928330+00:00 app[web.1]:[39m DEPRECATION WARNING: The configuration option `config.serve_static_assets` has been renamed to `config.serve_static_files` to clarify its role (it merely enables serving everything in the `public` folder and is unrelated to the asset pipeline). The `serve_static_assets` alias will be removed in Rails 5.0. Please migrate your configuration files accordingly. (called from block in <top (required)> at /app/config/environments/production.rb:32)
+[36m2016-08-04T18:39:38.938626+00:00 app[web.1]:[39m config.eager_load is set to nil. Please update your config/environments/*.rb files accordingly:
+[36m2016-08-04T18:39:38.938628+00:00 app[web.1]:[39m 
+[36m2016-08-04T18:39:38.938630+00:00 app[web.1]:[39m   * test - set it to false (unless you use a tool that preloads your test environment)
+[36m2016-08-04T18:39:38.938629+00:00 app[web.1]:[39m   * development - set it to false
+[36m2016-08-04T18:39:38.938631+00:00 app[web.1]:[39m   * production - set it to true
+[36m2016-08-04T18:39:38.938631+00:00 app[web.1]:[39m 
+[36m2016-08-04T18:39:38.939764+00:00 app[web.1]:[39m DEPRECATION WARNING: You did not specify a `log_level` in `production.rb`. Currently, the default value for `log_level` is `:info` for the production environment and `:debug` in all other environments. In Rails 5 the default value will be unified to `:debug` across all environments. To preserve the current setting, add the following line to your `production.rb`:
+[36m2016-08-04T18:39:38.939765+00:00 app[web.1]:[39m 
+[36m2016-08-04T18:39:38.939766+00:00 app[web.1]:[39m    config.log_level = :info
+[36m2016-08-04T18:39:38.939766+00:00 app[web.1]:[39m 
+[36m2016-08-04T18:39:38.939767+00:00 app[web.1]:[39m . (called from block in tsort_each at /app/vendor/ruby-2.0.0/lib/ruby/2.0.0/tsort.rb:150)
+[36m2016-08-04T18:39:39.764961+00:00 app[web.1]:[39m [2016-08-04 18:39:39] INFO  ruby 2.0.0 (2015-12-16) [x86_64-linux]
+[36m2016-08-04T18:39:39.764943+00:00 app[web.1]:[39m [2016-08-04 18:39:39] INFO  WEBrick 1.3.1
+[36m2016-08-04T18:39:39.765185+00:00 app[web.1]:[39m [2016-08-04 18:39:39] INFO  WEBrick::HTTPServer#start: pid=3 port=58117
+[36m2016-08-04T18:39:40.105793+00:00 heroku[web.1]:[39m State changed from starting to up
+[35m2016-08-04T18:39:43.790493+00:00 heroku[router]:[39m at=info method=GET path="/javascripts/defaults.js" host=ticketz.herokuapp.com request_id=a10fb812-2da6-459d-a933-a357fce5aa1f fwd="91.115.72.34" dyno=web.1 connect=0ms service=149ms status=404 bytes=24086
+[35m2016-08-04T18:39:43.756167+00:00 heroku[router]:[39m at=info method=GET path="/stylesheets/all.css" host=ticketz.herokuapp.com request_id=b0c66c8d-d7d5-48ac-ae3a-40cfe1e7ac5d fwd="91.115.72.34" dyno=web.1 connect=0ms service=122ms status=404 bytes=24099
+[35m2016-08-04T18:39:45.969256+00:00 heroku[router]:[39m at=info method=GET path="/facebooks/new?utf8=%E2%9C%93&event_url=https%3A%2F%2Fwww.facebook.com%2Fevents%2F1482424362052376&email=michael%40mittermayr.com&commit=Subscribe" host=ticketz.herokuapp.com request_id=3b42eca4-be4e-4de8-ba5e-c82b1ed1a662 fwd="91.115.72.34" dyno=web.1 connect=0ms service=279ms status=200 bytes=878
+[35m2016-08-04T18:39:46.152238+00:00 heroku[router]:[39m at=info method=GET path="/stylesheets/all.css" host=ticketz.herokuapp.com request_id=b2596a36-4f5c-47f8-b047-09fb74baff89 fwd="91.115.72.34" dyno=web.1 connect=0ms service=40ms status=404 bytes=24097
+[35m2016-08-04T18:39:46.519793+00:00 heroku[router]:[39m at=info method=GET path="/javascripts/defaults.js" host=ticketz.herokuapp.com request_id=a4ae34a4-fcf2-4d1e-8f4b-0f94cacb5efe fwd="91.115.72.34" dyno=web.1 connect=0ms service=56ms status=404 bytes=24088
+[33m2016-08-04T18:44:01.493934+00:00 heroku[api]:[39m Deploy fabf6a4 by michael@mittermayr.com
+[33m2016-08-04T18:44:01.494043+00:00 heroku[api]:[39m Release v123 created by michael@mittermayr.com
+[32m2016-08-04T18:44:01.895698+00:00 heroku[slug-compiler]:[39m Slug compilation started
+[32m2016-08-04T18:44:01.895704+00:00 heroku[slug-compiler]:[39m Slug compilation finished
+[36m2016-08-04T18:44:01.778301+00:00 heroku[web.1]:[39m State changed from up to starting
+[36m2016-08-04T18:44:01.777709+00:00 heroku[web.1]:[39m Restarting
+[36m2016-08-04T18:44:04.227259+00:00 heroku[web.1]:[39m Stopping all processes with SIGTERM
+[36m2016-08-04T18:44:04.744652+00:00 app[web.1]:[39m [2016-08-04 18:44:04] FATAL SignalException: SIGTERM
+[36m2016-08-04T18:44:04.744666+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.3/lib/rails/commands/server.rb:80:in `start'
+[36m2016-08-04T18:44:04.744668+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.3/lib/rails/commands/commands_tasks.rb:75:in `tap'
+[36m2016-08-04T18:44:04.744669+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.3/lib/rails/commands/commands_tasks.rb:75:in `server'
+[36m2016-08-04T18:44:04.744664+00:00 app[web.1]:[39m 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:32:in `start'
+[36m2016-08-04T18:44:04.744666+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/rack-1.6.4/lib/rack/server.rb:286:in `start'
+[36m2016-08-04T18:44:04.744663+00:00 app[web.1]:[39m 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:170:in `block in start'
+[36m2016-08-04T18:44:04.744670+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.3/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+[36m2016-08-04T18:44:04.744670+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.3/lib/rails/commands.rb:17:in `<top (required)>'
+[36m2016-08-04T18:44:04.744668+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.3/lib/rails/commands/commands_tasks.rb:80:in `block in server'
+[36m2016-08-04T18:44:04.744672+00:00 app[web.1]:[39m 	bin/rails:4:in `require'
+[36m2016-08-04T18:44:04.744672+00:00 app[web.1]:[39m 	bin/rails:4:in `<main>'
+[36m2016-08-04T18:44:04.744677+00:00 app[web.1]:[39m [2016-08-04 18:44:04] INFO  going to shutdown ...
+[36m2016-08-04T18:44:04.775883+00:00 app[web.1]:[39m => Booting WEBrick
+[36m2016-08-04T18:44:04.744662+00:00 app[web.1]:[39m 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:170:in `select'
+[36m2016-08-04T18:44:04.775886+00:00 app[web.1]:[39m => Run `rails server -h` for more startup options
+[36m2016-08-04T18:44:04.744716+00:00 app[web.1]:[39m [2016-08-04 18:44:04] INFO  WEBrick::HTTPServer#start done.
+[36m2016-08-04T18:44:04.775885+00:00 app[web.1]:[39m => Rails 4.2.3 application starting in production on http://0.0.0.0:58117
+[36m2016-08-04T18:44:04.775887+00:00 app[web.1]:[39m => Ctrl-C to shutdown server
+[36m2016-08-04T18:44:04.775894+00:00 app[web.1]:[39m Job is starting!*****************************
+[36m2016-08-04T18:44:04.744664+00:00 app[web.1]:[39m 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:160:in `start'
+[36m2016-08-04T18:44:04.744665+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/rack-1.6.4/lib/rack/handler/webrick.rb:34:in `run'
+[36m2016-08-04T18:44:04.871646+00:00 heroku[web.1]:[39m Process exited with status 143
+[36m2016-08-04T18:44:04.775896+00:00 app[web.1]:[39m Exiting
+[36m2016-08-04T18:44:04.775894+00:00 app[web.1]:[39m Job is running!*****************************
+[36m2016-08-04T18:44:05.767692+00:00 heroku[web.1]:[39m Starting process with command `bin/rails server -p 49345 -e $RAILS_ENV`
+[36m2016-08-04T18:44:08.935239+00:00 heroku[web.1]:[39m Restarting
+[36m2016-08-04T18:44:13.009382+00:00 heroku[web.1]:[39m Starting process with command `bin/rails server -p 58860 -e $RAILS_ENV`
+[36m2016-08-04T18:44:14.199195+00:00 app[web.1]:[39m 
+[36m2016-08-04T18:44:14.199183+00:00 app[web.1]:[39m 
+[36m2016-08-04T18:44:14.203088+00:00 app[web.1]:[39m 
+[36m2016-08-04T18:44:14.203085+00:00 app[web.1]:[39m DEPRECATION WARNING: You did not specify a `log_level` in `production.rb`. Currently, the default value for `log_level` is `:info` for the production environment and `:debug` in all other environments. In Rails 5 the default value will be unified to `:debug` across all environments. To preserve the current setting, add the following line to your `production.rb`:
+[36m2016-08-04T18:44:14.199194+00:00 app[web.1]:[39m   * production - set it to true
+[36m2016-08-04T18:44:14.203089+00:00 app[web.1]:[39m    config.log_level = :info
+[36m2016-08-04T18:44:14.199172+00:00 app[web.1]:[39m config.eager_load is set to nil. Please update your config/environments/*.rb files accordingly:
+[36m2016-08-04T18:44:14.096628+00:00 app[web.1]:[39m DEPRECATION WARNING: The configuration option `config.serve_static_assets` has been renamed to `config.serve_static_files` to clarify its role (it merely enables serving everything in the `public` folder and is unrelated to the asset pipeline). The `serve_static_assets` alias will be removed in Rails 5.0. Please migrate your configuration files accordingly. (called from block in <top (required)> at /app/config/environments/production.rb:32)
+[36m2016-08-04T18:44:14.199191+00:00 app[web.1]:[39m   * development - set it to false
+[36m2016-08-04T18:44:14.203089+00:00 app[web.1]:[39m 
+[36m2016-08-04T18:44:14.203108+00:00 app[web.1]:[39m . (called from block in tsort_each at /app/vendor/ruby-2.0.0/lib/ruby/2.0.0/tsort.rb:150)
+[36m2016-08-04T18:44:14.199193+00:00 app[web.1]:[39m   * test - set it to false (unless you use a tool that preloads your test environment)
+[36m2016-08-04T18:44:17.280949+00:00 app[web.1]:[39m [2016-08-04 18:44:17] INFO  WEBrick 1.3.1
+[36m2016-08-04T18:44:17.281361+00:00 app[web.1]:[39m [2016-08-04 18:44:17] INFO  WEBrick::HTTPServer#start: pid=3 port=49345
+[36m2016-08-04T18:44:17.280961+00:00 app[web.1]:[39m [2016-08-04 18:44:17] INFO  ruby 2.0.0 (2015-12-16) [x86_64-linux]
+[36m2016-08-04T18:44:20.937194+00:00 app[web.1]:[39m DEPRECATION WARNING: The configuration option `config.serve_static_assets` has been renamed to `config.serve_static_files` to clarify its role (it merely enables serving everything in the `public` folder and is unrelated to the asset pipeline). The `serve_static_assets` alias will be removed in Rails 5.0. Please migrate your configuration files accordingly. (called from block in <top (required)> at /app/config/environments/production.rb:32)
+[36m2016-08-04T18:44:20.963406+00:00 app[web.1]:[39m config.eager_load is set to nil. Please update your config/environments/*.rb files accordingly:
+[36m2016-08-04T18:44:20.963428+00:00 app[web.1]:[39m 
+[36m2016-08-04T18:44:20.963435+00:00 app[web.1]:[39m   * development - set it to false
+[36m2016-08-04T18:44:20.963436+00:00 app[web.1]:[39m   * test - set it to false (unless you use a tool that preloads your test environment)
+[36m2016-08-04T18:44:20.963437+00:00 app[web.1]:[39m   * production - set it to true
+[36m2016-08-04T18:44:20.963438+00:00 app[web.1]:[39m 
+[36m2016-08-04T18:44:20.975241+00:00 app[web.1]:[39m DEPRECATION WARNING: You did not specify a `log_level` in `production.rb`. Currently, the default value for `log_level` is `:info` for the production environment and `:debug` in all other environments. In Rails 5 the default value will be unified to `:debug` across all environments. To preserve the current setting, add the following line to your `production.rb`:
+[36m2016-08-04T18:44:20.975244+00:00 app[web.1]:[39m 
+[36m2016-08-04T18:44:20.975245+00:00 app[web.1]:[39m    config.log_level = :info
+[36m2016-08-04T18:44:20.975245+00:00 app[web.1]:[39m 
+[36m2016-08-04T18:44:20.975246+00:00 app[web.1]:[39m . (called from block in tsort_each at /app/vendor/ruby-2.0.0/lib/ruby/2.0.0/tsort.rb:150)
+[36m2016-08-04T18:44:22.638732+00:00 heroku[web.1]:[39m Stopping all processes with SIGTERM
+[36m2016-08-04T18:44:24.188798+00:00 app[web.1]:[39m [2016-08-04 18:44:24] FATAL SignalException: SIGTERM
+[36m2016-08-04T18:44:24.188809+00:00 app[web.1]:[39m 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:170:in `select'
+[36m2016-08-04T18:44:24.188810+00:00 app[web.1]:[39m 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:170:in `block in start'
+[36m2016-08-04T18:44:24.188810+00:00 app[web.1]:[39m 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:32:in `start'
+[36m2016-08-04T18:44:24.188811+00:00 app[web.1]:[39m 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:160:in `start'
+[36m2016-08-04T18:44:24.188812+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/rack-1.6.4/lib/rack/handler/webrick.rb:34:in `run'
+[36m2016-08-04T18:44:24.188812+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/rack-1.6.4/lib/rack/server.rb:286:in `start'
+[36m2016-08-04T18:44:24.188813+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.3/lib/rails/commands/server.rb:80:in `start'
+[36m2016-08-04T18:44:24.188814+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.3/lib/rails/commands/commands_tasks.rb:80:in `block in server'
+[36m2016-08-04T18:44:24.188814+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.3/lib/rails/commands/commands_tasks.rb:75:in `tap'
+[36m2016-08-04T18:44:24.188815+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.3/lib/rails/commands/commands_tasks.rb:75:in `server'
+[36m2016-08-04T18:44:24.188816+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.3/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+[36m2016-08-04T18:44:24.188817+00:00 app[web.1]:[39m 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.3/lib/rails/commands.rb:17:in `<top (required)>'
+[36m2016-08-04T18:44:24.188818+00:00 app[web.1]:[39m 	bin/rails:4:in `require'
+[36m2016-08-04T18:44:24.188818+00:00 app[web.1]:[39m 	bin/rails:4:in `<main>'
+[36m2016-08-04T18:44:24.189258+00:00 app[web.1]:[39m [2016-08-04 18:44:24] INFO  going to shutdown ...
+[36m2016-08-04T18:44:24.189418+00:00 app[web.1]:[39m [2016-08-04 18:44:24] INFO  WEBrick::HTTPServer#start done.
+[36m2016-08-04T18:44:24.939561+00:00 app[web.1]:[39m [2016-08-04 18:44:24] INFO  WEBrick 1.3.1
+[36m2016-08-04T18:44:24.939574+00:00 app[web.1]:[39m [2016-08-04 18:44:24] INFO  ruby 2.0.0 (2015-12-16) [x86_64-linux]
+[36m2016-08-04T18:44:24.939956+00:00 app[web.1]:[39m [2016-08-04 18:44:24] INFO  WEBrick::HTTPServer#start: pid=3 port=58860
+[36m2016-08-04T18:44:25.486092+00:00 heroku[web.1]:[39m State changed from starting to up
+[36m2016-08-04T18:44:26.137002+00:00 app[web.1]:[39m => Booting WEBrick
+[36m2016-08-04T18:44:26.137013+00:00 app[web.1]:[39m => Rails 4.2.3 application starting in production on http://0.0.0.0:49345
+[36m2016-08-04T18:44:26.137014+00:00 app[web.1]:[39m => Run `rails server -h` for more startup options
+[36m2016-08-04T18:44:26.137015+00:00 app[web.1]:[39m => Ctrl-C to shutdown server
+[36m2016-08-04T18:44:26.137015+00:00 app[web.1]:[39m Exiting
+[36m2016-08-04T18:44:27.247920+00:00 heroku[web.1]:[39m Process exited with status 143
+[35m2016-08-04T18:44:41.173609+00:00 heroku[router]:[39m at=info method=GET path="/" host=ticketz.herokuapp.com request_id=34ca28a9-4ac7-42e9-8740-91e043c2e2ec fwd="91.115.72.34" dyno=web.1 connect=0ms service=1128ms status=200 bytes=1338
+[35m2016-08-04T18:44:41.676173+00:00 heroku[router]:[39m at=info method=GET path="/stylesheets/all.css" host=ticketz.herokuapp.com request_id=a1c60c00-91dc-493f-9f87-f8a9a384d113 fwd="91.115.72.34" dyno=web.1 connect=0ms service=367ms status=404 bytes=24097
+[35m2016-08-04T18:44:41.799934+00:00 heroku[router]:[39m at=info method=GET path="/javascripts/defaults.js" host=ticketz.herokuapp.com request_id=7a1c6af2-d68a-493f-81e9-97a572d39ac8 fwd="91.115.72.34" dyno=web.1 connect=0ms service=234ms status=404 bytes=24084
+[35m2016-08-04T18:44:42.612515+00:00 heroku[router]:[39m at=info method=GET path="/facebooks/new?utf8=%E2%9C%93&event_url=https%3A%2F%2Fwww.facebook.com%2Fevents%2F1482424362052376&

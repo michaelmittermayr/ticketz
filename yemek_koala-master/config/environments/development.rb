@@ -31,8 +31,8 @@ YemekKoala::Application.configure do
   ActionMailer::Base.delivery_method = :smtp
 
   config.action_mailer.smtp_settings = {
-    :user_name => 'mmittermayr',
-    :password => 'Welcome2$2016',
+    :user_name => ENV["SENDGRID_USERNAME"],#'mmittermayr',
+    :password => ENV["SENDGRID_PASSWORD"],#'Welcome2$2016',
     :domain => 'ticketz.herokuapp.com',
     :address              => 'smtp.sendgrid.net',
      #:address              => "smtp.gmail.com",
