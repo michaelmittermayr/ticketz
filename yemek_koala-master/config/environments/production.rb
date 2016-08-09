@@ -35,7 +35,21 @@ YemekKoala::Application.configure do
   # config.action_controller.asset_host = "http://assets.example.com"
 
   # Disable delivery errors, bad email addresses will be ignored
-  # config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.raise_delivery_errors = true
+
+  config.action_mailer.smtp_settings = {
+    :user_name => ENV["SENDGRID_USERNAME"],#'mmittermayr',
+    :password => ENV["SENDGRID_PASSWORD"],#'Welcome2$2016',
+    :domain => 'heroku.com',
+    :address              => 'smtp.sendgrid.net',
+     #:address              => "smtp.gmail.com",
+     :port                 => 587,
+     #
+     #:domain               => 'gmail.com',
+     #:user_name            => 'kaisercoins@gmail.com',
+     #:password             => 'hpvwpvsuqrvcwwgm',
+     :authentication       => :plain,
+     :enable_starttls_auto => true  }
 
   # Enable threaded mode
   # config.threadsafe!
