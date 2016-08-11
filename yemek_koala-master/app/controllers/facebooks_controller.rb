@@ -48,6 +48,7 @@ class FacebooksController < ApplicationController
   def new
       event = params["event_url"].gsub(/[^\d]/, '')
       email = params["email"]
-      EventListener.perform_async(event, email)
+      ProcessSubscription.perform_async(event, email)
+      EventListener.perform_async
   end
 end

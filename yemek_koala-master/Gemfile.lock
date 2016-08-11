@@ -79,10 +79,10 @@ GEM
     minitest (5.9.0)
     multi_json (1.12.1)
     multipart-post (2.0.0)
+    mysql (2.9.1)
     nokogiri (1.6.8)
       mini_portile2 (~> 2.1.0)
       pkg-config (~> 1.1.7)
-    pg (0.18.4)
     pkg-config (1.1.7)
     rack (1.6.4)
     rack-protection (1.5.3)
@@ -164,12 +164,13 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activerecord
   coffee-rails (~> 4.1.0)
   execjs
   jbuilder (~> 2.0)
   jquery-rails
   koala
-  pg
+  mysql
   rails (= 4.2.3)
   redis (~> 3.2)
   sass-rails (~> 5.0)
