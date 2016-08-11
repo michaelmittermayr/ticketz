@@ -11,8 +11,8 @@ class EventListener
         
         # Start iteration
         while true do  
-            Event.each do |event|
-              posts = @graph.get_connections(event,"feed")
+            Event.all.each do |event|
+              posts = @graph.get_connections(event.id,"feed")
               @tickets = []
 
               posts.each do |post|
@@ -31,8 +31,9 @@ class EventListener
                 @tickets << bid if bid.present?
               end
 
-              Event.find(event).subscriptions.where(status: true).each do |user|
-                ActionMailer::Base.mail(:content_type => 'text/html', :from => "kaisercoins@gmail.com", :to => user.email, :subject => "Ticket ALERT!", :body => @tickets.map{|x| "<br>" + x[:link].html_safe}).deliver_now if @tickets.present?
+              Event.find(event.id).subscriptions.where(status: true).each do |subscription|
+                puts subscription.inspect
+                ActionMailer::Base.mail(:content_type => 'text/html', :from => "kaisercoins@gmail.com", :to => subscription.user.email, :subject => "Ticket ALERT!", :body => @tickets.map{|x| "<br>" + x[:link].html_safe}).deliver_now if @tickets.present?
               end
 
             end
