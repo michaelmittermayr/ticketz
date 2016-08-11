@@ -79,7 +79,7 @@ GEM
     minitest (5.9.0)
     multi_json (1.12.1)
     multipart-post (2.0.0)
-    mysql (2.9.1)
+    mysql2 (0.3.18)
     nokogiri (1.6.8)
       mini_portile2 (~> 2.1.0)
       pkg-config (~> 1.1.7)
@@ -170,7 +170,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   koala
-  mysql
+  mysql2
   rails (= 4.2.3)
   redis (~> 3.2)
   sass-rails (~> 5.0)
