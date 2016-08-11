@@ -37,7 +37,7 @@ class EventListener
               end
 
             end
-            sleep 120
+            sleep 60
         end
       #end
   end
