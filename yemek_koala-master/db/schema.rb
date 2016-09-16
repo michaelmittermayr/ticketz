@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 20160811160637) do
   end
 
   create_table "subscriptions", id: false, force: :cascade do |t|
+    t.integer  "id",         limit: 4,                null: false
     t.integer  "event_id",   limit: 8,                null: false
     t.integer  "user_id",    limit: 4,                null: false
     t.boolean  "status",               default: true, null: false

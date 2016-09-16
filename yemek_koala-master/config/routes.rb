@@ -60,6 +60,7 @@ YemekKoala::Application.routes.draw do
   post 'facebooks/new'
 
   resources :facebooks
+  resources :subscriptions
 
   # See how all your routes lay out with "rake routes"
 

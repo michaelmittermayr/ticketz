@@ -33,11 +33,16 @@ class EventListener
 
               Event.find(event.id).subscriptions.where(status: true).each do |subscription|
                 puts subscription.inspect
-                ActionMailer::Base.mail(:content_type => 'text/html', :from => "kaisercoins@gmail.com", :to => subscription.user.email, :subject => "Ticket ALERT!", :body => @tickets.map{|x| "<br>" + x[:link].html_safe}).deliver_now if @tickets.present?
+                url2 = "<a href='/subscriptions/#{subscription.id}/edit' data-method='get'>Disable notification</a>"
+                body = @tickets.map{|x| "<br>" + x[:link].html_safe} + " <br>" + url2.html_safe
+
+                #puts url_for(action: :delete, "*******************************Disable subscription", subscription_path
+
+                ActionMailer::Base.mail(:content_type => 'text/html', :from => "kaisercoins@gmail.com", :to => subscription.user.email, :subject => "Ticket ALERT!", :body => body).deliver_now if @tickets.present?
               end
 
             end
-            sleep 60
+            sleep 10  
         end
       #end
   end
