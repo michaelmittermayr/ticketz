@@ -36,7 +36,7 @@ class EventListener
               end  
 
             end
-            sleep 15            
+            sleep 300
 
             Subscription.where(status: true).each do |subscription|
             #Event.find(event.id).subscriptions.where(status: true).each do |subscription|
