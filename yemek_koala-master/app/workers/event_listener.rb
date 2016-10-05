@@ -25,6 +25,12 @@ class EventListener
                     post["message"].include?("sell") ||
                     post["message"].include?("offer") ||
                     post["message"].include?("verkaufe") ||
+                    post["message"].include?("Ticket") ||
+                    post["message"].include?("vergeben") ||
+                    post["message"].include?("schenke") ||
+                    post["message"].include?("Karte") ||
+                    post["message"].include?("give away") ||
+                    post["message"].include?("have") ||
                     post["message"].include?("biete") ||
                     post["message"].include?("euro"))
 
