@@ -17,7 +17,7 @@ class EventListener
 
               posts.each do |post|
                 next if post["message"].nil?
-                url = "#{(20..100).to_a.sample}% - <a href='http://www.facebook.com/#{post["id"]}'>#{post["message"]}</a>"
+                url = "<a href='http://www.facebook.com/#{post["id"]}'>#{post["message"]}</a>"
 
                 bid = {:link => url} if (post["message"].downcase.include?("€") || 
                     post["message"].include?("$") ||
@@ -30,20 +30,26 @@ class EventListener
 
                 @tickets << bid if bid.present?
               end
-
-              Event.find(event.id).subscriptions.where(status: true).each do |subscription|
-                puts subscription.inspect
-                url2 = "<a href='/subscriptions/#{subscription.id}/edit' data-method='get'>Disable notification</a>"
-                body = @tickets.map{|x| "<br>" + x[:link].html_safe} + " <br>" + url2.html_safe
-
-                #puts url_for(action: :delete, "*******************************Disable subscription", subscription_path
-
-                ActionMailer::Base.mail(:content_type => 'text/html', :from => "kaisercoins@gmail.com", :to => subscription.user.email, :subject => "Ticket ALERT!", :body => body).deliver_now if @tickets.present?
-              end
+             
+              @tickets.map do |ticket|
+                Ticket.find_or_create_by(event_id: event.id, link: "<br>" + ticket[:link].html_safe)
+              end  
 
             end
-            sleep 10  
+            sleep 15            
+
+            Subscription.where(status: true).each do |subscription|
+            #Event.find(event.id).subscriptions.where(status: true).each do |subscription|
+                puts subscription.inspect
+                tickets = subscription.event.tickets.where(sent: 0)
+                url2 = "<a href='http://ticketz.herokuapp.com/subscriptions/#{subscription.id}/edit' data-method='get'>Disable notification</a>"                
+                puts url2
+                body = "#{tickets.map{|x| "<br>" + x[:link].html_safe}}" + " <br><br>" + url2.html_safe
+                #puts url_for(action: :delete, "*******************************Disable subscription", subscription_path
+
+                ActionMailer::Base.mail(:content_type => 'text/html', :from => "kaisercoins@gmail.com", :to => subscription.user.email, :subject => "Ticket ALERT!", :body => body).deliver_now if tickets.present?
+                tickets.map{|ticket| Ticket.update(ticket.id, sent: 1)} if tickets.present?
+            end
         end
-      #end
   end
 end
