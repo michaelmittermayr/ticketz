@@ -31,14 +31,11 @@ YemekKoala::Application.configure do
   ActionMailer::Base.delivery_method = :smtp
 
   config.action_mailer.smtp_settings = {
-    #:domain => 'heroku.com',
-    #:address              => 'smtp.sendgrid.net',
-     :address              => "smtp.gmail.com",
+    :user_name => ENV["SENDGRID_USERNAME"],
+    :password => ENV["SENDGRID_PASSWORD"],
+    :domain => 'heroku.com',
+    :address              => 'smtp.sendgrid.net',
      :port                 => 587,
-     #
-     :domain               => 'gmail.com',
-     :user_name            => 'kaisercoins@gmail.com',
-     :password             => 'hpvwpvsuqrvcwwgm',
      :authentication       => :plain,
      :enable_starttls_auto => true  }
 
