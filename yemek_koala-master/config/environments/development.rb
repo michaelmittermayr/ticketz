@@ -25,7 +25,7 @@ YemekKoala::Application.configure do
   # Only use best-standards-support built into browsers
   config.action_dispatch.best_standards_support = :builtin
 
-  config.action_mailer.default_url_options = { :host => 'http://ticketz.herokuapp.com' }
+  config.action_mailer.default_url_options = { :host => 'http://ticketz-ticketz.44fs.preview.openshiftapps.com' }
   config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = true
   ActionMailer::Base.delivery_method = :smtp
@@ -33,7 +33,7 @@ YemekKoala::Application.configure do
   config.action_mailer.smtp_settings = {
     :user_name => ENV["SENDGRID_USERNAME"],
     :password => ENV["SENDGRID_PASSWORD"],
-    :domain => 'openshiftapps.com',
+  #  :domain => 'openshiftapps.com',
     :address              => 'smtp.sendgrid.net',
      :port                 => 587,
      :authentication       => :plain,

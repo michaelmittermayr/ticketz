@@ -53,7 +53,7 @@ class EventListener
                 body = "#{tickets.map{|x| "<br>" + x[:link].html_safe}}" + " <br><br>" + url2.html_safe
                 #puts url_for(action: :delete, "*******************************Disable subscription", subscription_path
 
-                ActionMailer::Base.mail(:content_type => 'text/html', :from => "kaisercoins@gmail.com", :to => subscription.user.email, :subject => "Ticket ALERT!", :body => body).deliver_now if tickets.present?
+                ActionMailer::Base.mail(:content_type => 'text/html', :from => "mittermayrmichael@gmail.com", :to => subscription.user.email, :subject => "Ticket ALERT!", :body => body).deliver_now if tickets.present?
                 tickets.map{|ticket| Ticket.update(ticket.id, sent: 1)} if tickets.present?
             end
         end
