@@ -1,0 +1,14 @@
+<h1>Event subscription service </h1>
+
+<%= form_tag("/facebooks/new", method: "get") do %>
+      <%= label_tag(:event_url, "Enter facebook event url:") %>      
+      <%= text_field_tag(:event_url, nil, :required => true) %>
+
+      <%= label_tag(:email, "Email:") %>
+      <%= text_field_tag(:email, nil, :required => true) %>
+
+      <%= submit_tag("Subscribe") %>
+<% end %>
+
+
+
